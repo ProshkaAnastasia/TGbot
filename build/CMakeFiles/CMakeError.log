@@ -1,0 +1,98 @@
+Determining if the __i386__ exist failed with the following output:
+Change Dir: /Users/anastasiapronina/C++Projects/TelegramBot/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_a0ff5/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_a0ff5.dir/build.make CMakeFiles/cmTC_a0ff5.dir/build
+Building CXX object CMakeFiles/cmTC_a0ff5.dir/CheckSymbolExists.cxx.o
+/usr/bin/clang++   -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++20 -MD -MT CMakeFiles/cmTC_a0ff5.dir/CheckSymbolExists.cxx.o -MF CMakeFiles/cmTC_a0ff5.dir/CheckSymbolExists.cxx.o.d -o CMakeFiles/cmTC_a0ff5.dir/CheckSymbolExists.cxx.o -c /Users/anastasiapronina/C++Projects/TelegramBot/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx
+/Users/anastasiapronina/C++Projects/TelegramBot/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:7:19: error: use of undeclared identifier '__i386__'
+  return ((int*)(&__i386__))[argc];
+                  ^
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_a0ff5.dir/CheckSymbolExists.cxx.o] Error 1
+make: *** [cmTC_a0ff5/fast] Error 2
+
+
+File /Users/anastasiapronina/C++Projects/TelegramBot/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:
+/* */
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef __i386__
+  return ((int*)(&__i386__))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the __x86_64__ exist failed with the following output:
+Change Dir: /Users/anastasiapronina/C++Projects/TelegramBot/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_4825b/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_4825b.dir/build.make CMakeFiles/cmTC_4825b.dir/build
+Building CXX object CMakeFiles/cmTC_4825b.dir/CheckSymbolExists.cxx.o
+/usr/bin/clang++   -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++20 -MD -MT CMakeFiles/cmTC_4825b.dir/CheckSymbolExists.cxx.o -MF CMakeFiles/cmTC_4825b.dir/CheckSymbolExists.cxx.o.d -o CMakeFiles/cmTC_4825b.dir/CheckSymbolExists.cxx.o -c /Users/anastasiapronina/C++Projects/TelegramBot/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx
+/Users/anastasiapronina/C++Projects/TelegramBot/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:7:19: error: use of undeclared identifier '__x86_64__'
+  return ((int*)(&__x86_64__))[argc];
+                  ^
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_4825b.dir/CheckSymbolExists.cxx.o] Error 1
+make: *** [cmTC_4825b/fast] Error 2
+
+
+File /Users/anastasiapronina/C++Projects/TelegramBot/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:
+/* */
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef __x86_64__
+  return ((int*)(&__x86_64__))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the __arm__ exist failed with the following output:
+Change Dir: /Users/anastasiapronina/C++Projects/TelegramBot/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_82342/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_82342.dir/build.make CMakeFiles/cmTC_82342.dir/build
+Building CXX object CMakeFiles/cmTC_82342.dir/CheckSymbolExists.cxx.o
+/usr/bin/clang++   -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++20 -MD -MT CMakeFiles/cmTC_82342.dir/CheckSymbolExists.cxx.o -MF CMakeFiles/cmTC_82342.dir/CheckSymbolExists.cxx.o.d -o CMakeFiles/cmTC_82342.dir/CheckSymbolExists.cxx.o -c /Users/anastasiapronina/C++Projects/TelegramBot/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx
+/Users/anastasiapronina/C++Projects/TelegramBot/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:7:19: error: use of undeclared identifier '__arm__'
+  return ((int*)(&__arm__))[argc];
+                  ^
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_82342.dir/CheckSymbolExists.cxx.o] Error 1
+make: *** [cmTC_82342/fast] Error 2
+
+
+File /Users/anastasiapronina/C++Projects/TelegramBot/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:
+/* */
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef __arm__
+  return ((int*)(&__arm__))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Performing C++ SOURCE FILE Test HAVE_MYSQL_OPT_EMBEDDED_CONNECTION failed with the following output:
+Change Dir: /Users/anastasiapronina/C++Projects/TelegramBot/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_05d73/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_05d73.dir/build.make CMakeFiles/cmTC_05d73.dir/build
+Building CXX object CMakeFiles/cmTC_05d73.dir/src.cxx.o
+/usr/bin/clang++ -DHAVE_MYSQL_OPT_EMBEDDED_CONNECTION -I/usr/local/mysql/include -pedantic -Wno-error=parentheses -Wall -Wextra -Wpointer-arith -Wcast-align -Wcast-qual -Wfloat-equal -Woverloaded-virtual -Wredundant-decls -Wno-long-long   -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++20 -MD -MT CMakeFiles/cmTC_05d73.dir/src.cxx.o -MF CMakeFiles/cmTC_05d73.dir/src.cxx.o.d -o CMakeFiles/cmTC_05d73.dir/src.cxx.o -c /Users/anastasiapronina/C++Projects/TelegramBot/build/CMakeFiles/CMakeTmp/src.cxx
+/Users/anastasiapronina/C++Projects/TelegramBot/build/CMakeFiles/CMakeTmp/src.cxx:2:22: error: use of undeclared identifier 'MYSQL_OPT_USE_EMBEDDED_CONNECTION'
+int main() { int i = MYSQL_OPT_USE_EMBEDDED_CONNECTION; }
+                     ^
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_05d73.dir/src.cxx.o] Error 1
+make: *** [cmTC_05d73/fast] Error 2
+
+
+Source file was:
+#include <mysql.h>
+int main() { int i = MYSQL_OPT_USE_EMBEDDED_CONNECTION; }

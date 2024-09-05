@@ -1,0 +1,582 @@
+## This file contains all the build statements describing the
+# compilation DAG.
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# 
+# Which is the root file.
+# =============================================================================
+
+# =============================================================================
+# Project: TelegramBot
+# Configurations: Debug
+# =============================================================================
+
+#############################################
+# Minimal version of Ninja required by this file
+
+ninja_required_version = 1.5
+
+
+#############################################
+# Set configuration variable for custom commands.
+
+CONFIGURATION = Debug
+# =============================================================================
+# Include auxiliary files.
+
+
+#############################################
+# Include rules file.
+
+include CMakeFiles/rules.ninja
+
+# =============================================================================
+
+#############################################
+# Logical path to working directory; prefix for absolute paths.
+
+cmake_ninja_workdir = /Users/anastasiapronina/C++Projects/TelegramBot/cmake-build-debug/
+# =============================================================================
+# Object build statements for EXECUTABLE target TelegramBot
+
+
+#############################################
+# Order-only phony target for TelegramBot
+
+build cmake_object_order_depends_target_TelegramBot: phony || cmake_object_order_depends_target_TgBot
+
+build CMakeFiles/TelegramBot.dir/main.cpp.o: CXX_COMPILER__TelegramBot_Debug /Users/anastasiapronina/C++Projects/TelegramBot/main.cpp || cmake_object_order_depends_target_TelegramBot
+  DEFINES = -DBOOST_SYSTEM_DYN_LINK -DBOOST_SYSTEM_NO_LIB
+  DEP_FILE = CMakeFiles/TelegramBot.dir/main.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -fcolor-diagnostics -std=gnu++17
+  INCLUDES = -I/opt/homebrew/Cellar/boost/1.80.0/include -I/Users/anastasiapronina/C++Projects/TelegramBot/nlohmann_json/include -I/Users/anastasiapronina/C++Projects/TelegramBot/tgbot-cpp/include -isystem /opt/homebrew/include
+  OBJECT_DIR = CMakeFiles/TelegramBot.dir
+  OBJECT_FILE_DIR = CMakeFiles/TelegramBot.dir
+  TARGET_COMPILE_PDB = CMakeFiles/TelegramBot.dir/
+  TARGET_PDB = TelegramBot.pdb
+
+build CMakeFiles/TelegramBot.dir/SQLDataBase.cpp.o: CXX_COMPILER__TelegramBot_Debug /Users/anastasiapronina/C++Projects/TelegramBot/SQLDataBase.cpp || cmake_object_order_depends_target_TelegramBot
+  DEFINES = -DBOOST_SYSTEM_DYN_LINK -DBOOST_SYSTEM_NO_LIB
+  DEP_FILE = CMakeFiles/TelegramBot.dir/SQLDataBase.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -fcolor-diagnostics -std=gnu++17
+  INCLUDES = -I/opt/homebrew/Cellar/boost/1.80.0/include -I/Users/anastasiapronina/C++Projects/TelegramBot/nlohmann_json/include -I/Users/anastasiapronina/C++Projects/TelegramBot/tgbot-cpp/include -isystem /opt/homebrew/include
+  OBJECT_DIR = CMakeFiles/TelegramBot.dir
+  OBJECT_FILE_DIR = CMakeFiles/TelegramBot.dir
+  TARGET_COMPILE_PDB = CMakeFiles/TelegramBot.dir/
+  TARGET_PDB = TelegramBot.pdb
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target TelegramBot
+
+
+#############################################
+# Link the executable TelegramBot
+
+build TelegramBot: CXX_EXECUTABLE_LINKER__TelegramBot_Debug CMakeFiles/TelegramBot.dir/main.cpp.o CMakeFiles/TelegramBot.dir/SQLDataBase.cpp.o | tgbot-cpp/libTgBot.a /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/lib/libz.tbd /opt/homebrew/opt/openssl@3/lib/libssl.dylib /opt/homebrew/opt/openssl@3/lib/libcrypto.dylib /opt/homebrew/lib/libboost_system-mt.dylib /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/lib/libcurl.tbd || tgbot-cpp/libTgBot.a
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk
+  LINK_LIBRARIES = tgbot-cpp/libTgBot.a  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/lib/libz.tbd  /opt/homebrew/opt/openssl@3/lib/libssl.dylib  /opt/homebrew/opt/openssl@3/lib/libcrypto.dylib  /opt/homebrew/lib/libboost_system-mt.dylib  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/lib/libcurl.tbd
+  OBJECT_DIR = CMakeFiles/TelegramBot.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_COMPILE_PDB = CMakeFiles/TelegramBot.dir/
+  TARGET_FILE = TelegramBot
+  TARGET_PDB = TelegramBot.pdb
+
+
+#############################################
+# Utility command for edit_cache
+
+build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/anastasiapronina/C++Projects/TelegramBot/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build edit_cache: phony CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/anastasiapronina/C++Projects/TelegramBot/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S/Users/anastasiapronina/C++Projects/TelegramBot -B/Users/anastasiapronina/C++Projects/TelegramBot/cmake-build-debug
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build rebuild_cache: phony CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build CMakeFiles/install.util: CUSTOM_COMMAND all
+  COMMAND = cd /Users/anastasiapronina/C++Projects/TelegramBot/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -P cmake_install.cmake
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build install: phony CMakeFiles/install.util
+
+
+#############################################
+# Utility command for install/local
+
+build CMakeFiles/install/local.util: CUSTOM_COMMAND all
+  COMMAND = cd /Users/anastasiapronina/C++Projects/TelegramBot/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build install/local: phony CMakeFiles/install/local.util
+
+
+#############################################
+# Utility command for install/strip
+
+build CMakeFiles/install/strip.util: CUSTOM_COMMAND all
+  COMMAND = cd /Users/anastasiapronina/C++Projects/TelegramBot/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+  DESC = Installing the project stripped...
+  pool = console
+  restat = 1
+
+build install/strip: phony CMakeFiles/install/strip.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /Users/anastasiapronina/C++Projects/TelegramBot/CMakeLists.txt
+# =============================================================================
+
+
+#############################################
+# Utility command for edit_cache
+
+build nlohmann_json/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/anastasiapronina/C++Projects/TelegramBot/cmake-build-debug/nlohmann_json && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build nlohmann_json/edit_cache: phony nlohmann_json/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build nlohmann_json/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/anastasiapronina/C++Projects/TelegramBot/cmake-build-debug/nlohmann_json && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S/Users/anastasiapronina/C++Projects/TelegramBot -B/Users/anastasiapronina/C++Projects/TelegramBot/cmake-build-debug
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build nlohmann_json/rebuild_cache: phony nlohmann_json/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build nlohmann_json/list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build nlohmann_json/CMakeFiles/install.util: CUSTOM_COMMAND nlohmann_json/all
+  COMMAND = cd /Users/anastasiapronina/C++Projects/TelegramBot/cmake-build-debug/nlohmann_json && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -P cmake_install.cmake
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build nlohmann_json/install: phony nlohmann_json/CMakeFiles/install.util
+
+
+#############################################
+# Utility command for install/local
+
+build nlohmann_json/CMakeFiles/install/local.util: CUSTOM_COMMAND nlohmann_json/all
+  COMMAND = cd /Users/anastasiapronina/C++Projects/TelegramBot/cmake-build-debug/nlohmann_json && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build nlohmann_json/install/local: phony nlohmann_json/CMakeFiles/install/local.util
+
+
+#############################################
+# Utility command for install/strip
+
+build nlohmann_json/CMakeFiles/install/strip.util: CUSTOM_COMMAND nlohmann_json/all
+  COMMAND = cd /Users/anastasiapronina/C++Projects/TelegramBot/cmake-build-debug/nlohmann_json && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+  DESC = Installing the project stripped...
+  pool = console
+  restat = 1
+
+build nlohmann_json/install/strip: phony nlohmann_json/CMakeFiles/install/strip.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /Users/anastasiapronina/C++Projects/TelegramBot/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target TgBot
+
+
+#############################################
+# Order-only phony target for TgBot
+
+build cmake_object_order_depends_target_TgBot: phony || tgbot-cpp/CMakeFiles/TgBot.dir
+
+build tgbot-cpp/CMakeFiles/TgBot.dir/src/Api.cpp.o: CXX_COMPILER__TgBot_Debug /Users/anastasiapronina/C++Projects/TelegramBot/tgbot-cpp/src/Api.cpp || cmake_object_order_depends_target_TgBot
+  DEFINES = -DBOOST_ALL_DYN_LINK -DBOOST_SYSTEM_DYN_LINK -DBOOST_SYSTEM_NO_LIB -DHAVE_CURL
+  DEP_FILE = tgbot-cpp/CMakeFiles/TgBot.dir/src/Api.cpp.o.d
+  FLAGS = -Wall -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -fPIC -fcolor-diagnostics -std=c++14
+  INCLUDES = -I/opt/homebrew/Cellar/boost/1.80.0/include -I/Users/anastasiapronina/C++Projects/TelegramBot/tgbot-cpp/include -I/opt/homebrew/opt/openssl@3/include -isystem /opt/homebrew/include
+  OBJECT_DIR = tgbot-cpp/CMakeFiles/TgBot.dir
+  OBJECT_FILE_DIR = tgbot-cpp/CMakeFiles/TgBot.dir/src
+  TARGET_COMPILE_PDB = tgbot-cpp/CMakeFiles/TgBot.dir/TgBot.pdb
+  TARGET_PDB = tgbot-cpp/libTgBot.pdb
+
+build tgbot-cpp/CMakeFiles/TgBot.dir/src/Bot.cpp.o: CXX_COMPILER__TgBot_Debug /Users/anastasiapronina/C++Projects/TelegramBot/tgbot-cpp/src/Bot.cpp || cmake_object_order_depends_target_TgBot
+  DEFINES = -DBOOST_ALL_DYN_LINK -DBOOST_SYSTEM_DYN_LINK -DBOOST_SYSTEM_NO_LIB -DHAVE_CURL
+  DEP_FILE = tgbot-cpp/CMakeFiles/TgBot.dir/src/Bot.cpp.o.d
+  FLAGS = -Wall -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -fPIC -fcolor-diagnostics -std=c++14
+  INCLUDES = -I/opt/homebrew/Cellar/boost/1.80.0/include -I/Users/anastasiapronina/C++Projects/TelegramBot/tgbot-cpp/include -I/opt/homebrew/opt/openssl@3/include -isystem /opt/homebrew/include
+  OBJECT_DIR = tgbot-cpp/CMakeFiles/TgBot.dir
+  OBJECT_FILE_DIR = tgbot-cpp/CMakeFiles/TgBot.dir/src
+  TARGET_COMPILE_PDB = tgbot-cpp/CMakeFiles/TgBot.dir/TgBot.pdb
+  TARGET_PDB = tgbot-cpp/libTgBot.pdb
+
+build tgbot-cpp/CMakeFiles/TgBot.dir/src/EventHandler.cpp.o: CXX_COMPILER__TgBot_Debug /Users/anastasiapronina/C++Projects/TelegramBot/tgbot-cpp/src/EventHandler.cpp || cmake_object_order_depends_target_TgBot
+  DEFINES = -DBOOST_ALL_DYN_LINK -DBOOST_SYSTEM_DYN_LINK -DBOOST_SYSTEM_NO_LIB -DHAVE_CURL
+  DEP_FILE = tgbot-cpp/CMakeFiles/TgBot.dir/src/EventHandler.cpp.o.d
+  FLAGS = -Wall -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -fPIC -fcolor-diagnostics -std=c++14
+  INCLUDES = -I/opt/homebrew/Cellar/boost/1.80.0/include -I/Users/anastasiapronina/C++Projects/TelegramBot/tgbot-cpp/include -I/opt/homebrew/opt/openssl@3/include -isystem /opt/homebrew/include
+  OBJECT_DIR = tgbot-cpp/CMakeFiles/TgBot.dir
+  OBJECT_FILE_DIR = tgbot-cpp/CMakeFiles/TgBot.dir/src
+  TARGET_COMPILE_PDB = tgbot-cpp/CMakeFiles/TgBot.dir/TgBot.pdb
+  TARGET_PDB = tgbot-cpp/libTgBot.pdb
+
+build tgbot-cpp/CMakeFiles/TgBot.dir/src/TgException.cpp.o: CXX_COMPILER__TgBot_Debug /Users/anastasiapronina/C++Projects/TelegramBot/tgbot-cpp/src/TgException.cpp || cmake_object_order_depends_target_TgBot
+  DEFINES = -DBOOST_ALL_DYN_LINK -DBOOST_SYSTEM_DYN_LINK -DBOOST_SYSTEM_NO_LIB -DHAVE_CURL
+  DEP_FILE = tgbot-cpp/CMakeFiles/TgBot.dir/src/TgException.cpp.o.d
+  FLAGS = -Wall -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -fPIC -fcolor-diagnostics -std=c++14
+  INCLUDES = -I/opt/homebrew/Cellar/boost/1.80.0/include -I/Users/anastasiapronina/C++Projects/TelegramBot/tgbot-cpp/include -I/opt/homebrew/opt/openssl@3/include -isystem /opt/homebrew/include
+  OBJECT_DIR = tgbot-cpp/CMakeFiles/TgBot.dir
+  OBJECT_FILE_DIR = tgbot-cpp/CMakeFiles/TgBot.dir/src
+  TARGET_COMPILE_PDB = tgbot-cpp/CMakeFiles/TgBot.dir/TgBot.pdb
+  TARGET_PDB = tgbot-cpp/libTgBot.pdb
+
+build tgbot-cpp/CMakeFiles/TgBot.dir/src/TgTypeParser.cpp.o: CXX_COMPILER__TgBot_Debug /Users/anastasiapronina/C++Projects/TelegramBot/tgbot-cpp/src/TgTypeParser.cpp || cmake_object_order_depends_target_TgBot
+  DEFINES = -DBOOST_ALL_DYN_LINK -DBOOST_SYSTEM_DYN_LINK -DBOOST_SYSTEM_NO_LIB -DHAVE_CURL
+  DEP_FILE = tgbot-cpp/CMakeFiles/TgBot.dir/src/TgTypeParser.cpp.o.d
+  FLAGS = -Wall -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -fPIC -fcolor-diagnostics -std=c++14
+  INCLUDES = -I/opt/homebrew/Cellar/boost/1.80.0/include -I/Users/anastasiapronina/C++Projects/TelegramBot/tgbot-cpp/include -I/opt/homebrew/opt/openssl@3/include -isystem /opt/homebrew/include
+  OBJECT_DIR = tgbot-cpp/CMakeFiles/TgBot.dir
+  OBJECT_FILE_DIR = tgbot-cpp/CMakeFiles/TgBot.dir/src
+  TARGET_COMPILE_PDB = tgbot-cpp/CMakeFiles/TgBot.dir/TgBot.pdb
+  TARGET_PDB = tgbot-cpp/libTgBot.pdb
+
+build tgbot-cpp/CMakeFiles/TgBot.dir/src/net/BoostHttpOnlySslClient.cpp.o: CXX_COMPILER__TgBot_Debug /Users/anastasiapronina/C++Projects/TelegramBot/tgbot-cpp/src/net/BoostHttpOnlySslClient.cpp || cmake_object_order_depends_target_TgBot
+  DEFINES = -DBOOST_ALL_DYN_LINK -DBOOST_SYSTEM_DYN_LINK -DBOOST_SYSTEM_NO_LIB -DHAVE_CURL
+  DEP_FILE = tgbot-cpp/CMakeFiles/TgBot.dir/src/net/BoostHttpOnlySslClient.cpp.o.d
+  FLAGS = -Wall -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -fPIC -fcolor-diagnostics -std=c++14
+  INCLUDES = -I/opt/homebrew/Cellar/boost/1.80.0/include -I/Users/anastasiapronina/C++Projects/TelegramBot/tgbot-cpp/include -I/opt/homebrew/opt/openssl@3/include -isystem /opt/homebrew/include
+  OBJECT_DIR = tgbot-cpp/CMakeFiles/TgBot.dir
+  OBJECT_FILE_DIR = tgbot-cpp/CMakeFiles/TgBot.dir/src/net
+  TARGET_COMPILE_PDB = tgbot-cpp/CMakeFiles/TgBot.dir/TgBot.pdb
+  TARGET_PDB = tgbot-cpp/libTgBot.pdb
+
+build tgbot-cpp/CMakeFiles/TgBot.dir/src/net/CurlHttpClient.cpp.o: CXX_COMPILER__TgBot_Debug /Users/anastasiapronina/C++Projects/TelegramBot/tgbot-cpp/src/net/CurlHttpClient.cpp || cmake_object_order_depends_target_TgBot
+  DEFINES = -DBOOST_ALL_DYN_LINK -DBOOST_SYSTEM_DYN_LINK -DBOOST_SYSTEM_NO_LIB -DHAVE_CURL
+  DEP_FILE = tgbot-cpp/CMakeFiles/TgBot.dir/src/net/CurlHttpClient.cpp.o.d
+  FLAGS = -Wall -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -fPIC -fcolor-diagnostics -std=c++14
+  INCLUDES = -I/opt/homebrew/Cellar/boost/1.80.0/include -I/Users/anastasiapronina/C++Projects/TelegramBot/tgbot-cpp/include -I/opt/homebrew/opt/openssl@3/include -isystem /opt/homebrew/include
+  OBJECT_DIR = tgbot-cpp/CMakeFiles/TgBot.dir
+  OBJECT_FILE_DIR = tgbot-cpp/CMakeFiles/TgBot.dir/src/net
+  TARGET_COMPILE_PDB = tgbot-cpp/CMakeFiles/TgBot.dir/TgBot.pdb
+  TARGET_PDB = tgbot-cpp/libTgBot.pdb
+
+build tgbot-cpp/CMakeFiles/TgBot.dir/src/net/HttpParser.cpp.o: CXX_COMPILER__TgBot_Debug /Users/anastasiapronina/C++Projects/TelegramBot/tgbot-cpp/src/net/HttpParser.cpp || cmake_object_order_depends_target_TgBot
+  DEFINES = -DBOOST_ALL_DYN_LINK -DBOOST_SYSTEM_DYN_LINK -DBOOST_SYSTEM_NO_LIB -DHAVE_CURL
+  DEP_FILE = tgbot-cpp/CMakeFiles/TgBot.dir/src/net/HttpParser.cpp.o.d
+  FLAGS = -Wall -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -fPIC -fcolor-diagnostics -std=c++14
+  INCLUDES = -I/opt/homebrew/Cellar/boost/1.80.0/include -I/Users/anastasiapronina/C++Projects/TelegramBot/tgbot-cpp/include -I/opt/homebrew/opt/openssl@3/include -isystem /opt/homebrew/include
+  OBJECT_DIR = tgbot-cpp/CMakeFiles/TgBot.dir
+  OBJECT_FILE_DIR = tgbot-cpp/CMakeFiles/TgBot.dir/src/net
+  TARGET_COMPILE_PDB = tgbot-cpp/CMakeFiles/TgBot.dir/TgBot.pdb
+  TARGET_PDB = tgbot-cpp/libTgBot.pdb
+
+build tgbot-cpp/CMakeFiles/TgBot.dir/src/net/TgLongPoll.cpp.o: CXX_COMPILER__TgBot_Debug /Users/anastasiapronina/C++Projects/TelegramBot/tgbot-cpp/src/net/TgLongPoll.cpp || cmake_object_order_depends_target_TgBot
+  DEFINES = -DBOOST_ALL_DYN_LINK -DBOOST_SYSTEM_DYN_LINK -DBOOST_SYSTEM_NO_LIB -DHAVE_CURL
+  DEP_FILE = tgbot-cpp/CMakeFiles/TgBot.dir/src/net/TgLongPoll.cpp.o.d
+  FLAGS = -Wall -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -fPIC -fcolor-diagnostics -std=c++14
+  INCLUDES = -I/opt/homebrew/Cellar/boost/1.80.0/include -I/Users/anastasiapronina/C++Projects/TelegramBot/tgbot-cpp/include -I/opt/homebrew/opt/openssl@3/include -isystem /opt/homebrew/include
+  OBJECT_DIR = tgbot-cpp/CMakeFiles/TgBot.dir
+  OBJECT_FILE_DIR = tgbot-cpp/CMakeFiles/TgBot.dir/src/net
+  TARGET_COMPILE_PDB = tgbot-cpp/CMakeFiles/TgBot.dir/TgBot.pdb
+  TARGET_PDB = tgbot-cpp/libTgBot.pdb
+
+build tgbot-cpp/CMakeFiles/TgBot.dir/src/net/Url.cpp.o: CXX_COMPILER__TgBot_Debug /Users/anastasiapronina/C++Projects/TelegramBot/tgbot-cpp/src/net/Url.cpp || cmake_object_order_depends_target_TgBot
+  DEFINES = -DBOOST_ALL_DYN_LINK -DBOOST_SYSTEM_DYN_LINK -DBOOST_SYSTEM_NO_LIB -DHAVE_CURL
+  DEP_FILE = tgbot-cpp/CMakeFiles/TgBot.dir/src/net/Url.cpp.o.d
+  FLAGS = -Wall -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -fPIC -fcolor-diagnostics -std=c++14
+  INCLUDES = -I/opt/homebrew/Cellar/boost/1.80.0/include -I/Users/anastasiapronina/C++Projects/TelegramBot/tgbot-cpp/include -I/opt/homebrew/opt/openssl@3/include -isystem /opt/homebrew/include
+  OBJECT_DIR = tgbot-cpp/CMakeFiles/TgBot.dir
+  OBJECT_FILE_DIR = tgbot-cpp/CMakeFiles/TgBot.dir/src/net
+  TARGET_COMPILE_PDB = tgbot-cpp/CMakeFiles/TgBot.dir/TgBot.pdb
+  TARGET_PDB = tgbot-cpp/libTgBot.pdb
+
+build tgbot-cpp/CMakeFiles/TgBot.dir/src/tools/FileTools.cpp.o: CXX_COMPILER__TgBot_Debug /Users/anastasiapronina/C++Projects/TelegramBot/tgbot-cpp/src/tools/FileTools.cpp || cmake_object_order_depends_target_TgBot
+  DEFINES = -DBOOST_ALL_DYN_LINK -DBOOST_SYSTEM_DYN_LINK -DBOOST_SYSTEM_NO_LIB -DHAVE_CURL
+  DEP_FILE = tgbot-cpp/CMakeFiles/TgBot.dir/src/tools/FileTools.cpp.o.d
+  FLAGS = -Wall -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -fPIC -fcolor-diagnostics -std=c++14
+  INCLUDES = -I/opt/homebrew/Cellar/boost/1.80.0/include -I/Users/anastasiapronina/C++Projects/TelegramBot/tgbot-cpp/include -I/opt/homebrew/opt/openssl@3/include -isystem /opt/homebrew/include
+  OBJECT_DIR = tgbot-cpp/CMakeFiles/TgBot.dir
+  OBJECT_FILE_DIR = tgbot-cpp/CMakeFiles/TgBot.dir/src/tools
+  TARGET_COMPILE_PDB = tgbot-cpp/CMakeFiles/TgBot.dir/TgBot.pdb
+  TARGET_PDB = tgbot-cpp/libTgBot.pdb
+
+build tgbot-cpp/CMakeFiles/TgBot.dir/src/tools/StringTools.cpp.o: CXX_COMPILER__TgBot_Debug /Users/anastasiapronina/C++Projects/TelegramBot/tgbot-cpp/src/tools/StringTools.cpp || cmake_object_order_depends_target_TgBot
+  DEFINES = -DBOOST_ALL_DYN_LINK -DBOOST_SYSTEM_DYN_LINK -DBOOST_SYSTEM_NO_LIB -DHAVE_CURL
+  DEP_FILE = tgbot-cpp/CMakeFiles/TgBot.dir/src/tools/StringTools.cpp.o.d
+  FLAGS = -Wall -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -fPIC -fcolor-diagnostics -std=c++14
+  INCLUDES = -I/opt/homebrew/Cellar/boost/1.80.0/include -I/Users/anastasiapronina/C++Projects/TelegramBot/tgbot-cpp/include -I/opt/homebrew/opt/openssl@3/include -isystem /opt/homebrew/include
+  OBJECT_DIR = tgbot-cpp/CMakeFiles/TgBot.dir
+  OBJECT_FILE_DIR = tgbot-cpp/CMakeFiles/TgBot.dir/src/tools
+  TARGET_COMPILE_PDB = tgbot-cpp/CMakeFiles/TgBot.dir/TgBot.pdb
+  TARGET_PDB = tgbot-cpp/libTgBot.pdb
+
+build tgbot-cpp/CMakeFiles/TgBot.dir/src/types/BotCommandScope.cpp.o: CXX_COMPILER__TgBot_Debug /Users/anastasiapronina/C++Projects/TelegramBot/tgbot-cpp/src/types/BotCommandScope.cpp || cmake_object_order_depends_target_TgBot
+  DEFINES = -DBOOST_ALL_DYN_LINK -DBOOST_SYSTEM_DYN_LINK -DBOOST_SYSTEM_NO_LIB -DHAVE_CURL
+  DEP_FILE = tgbot-cpp/CMakeFiles/TgBot.dir/src/types/BotCommandScope.cpp.o.d
+  FLAGS = -Wall -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -fPIC -fcolor-diagnostics -std=c++14
+  INCLUDES = -I/opt/homebrew/Cellar/boost/1.80.0/include -I/Users/anastasiapronina/C++Projects/TelegramBot/tgbot-cpp/include -I/opt/homebrew/opt/openssl@3/include -isystem /opt/homebrew/include
+  OBJECT_DIR = tgbot-cpp/CMakeFiles/TgBot.dir
+  OBJECT_FILE_DIR = tgbot-cpp/CMakeFiles/TgBot.dir/src/types
+  TARGET_COMPILE_PDB = tgbot-cpp/CMakeFiles/TgBot.dir/TgBot.pdb
+  TARGET_PDB = tgbot-cpp/libTgBot.pdb
+
+build tgbot-cpp/CMakeFiles/TgBot.dir/src/types/ChatMember.cpp.o: CXX_COMPILER__TgBot_Debug /Users/anastasiapronina/C++Projects/TelegramBot/tgbot-cpp/src/types/ChatMember.cpp || cmake_object_order_depends_target_TgBot
+  DEFINES = -DBOOST_ALL_DYN_LINK -DBOOST_SYSTEM_DYN_LINK -DBOOST_SYSTEM_NO_LIB -DHAVE_CURL
+  DEP_FILE = tgbot-cpp/CMakeFiles/TgBot.dir/src/types/ChatMember.cpp.o.d
+  FLAGS = -Wall -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -fPIC -fcolor-diagnostics -std=c++14
+  INCLUDES = -I/opt/homebrew/Cellar/boost/1.80.0/include -I/Users/anastasiapronina/C++Projects/TelegramBot/tgbot-cpp/include -I/opt/homebrew/opt/openssl@3/include -isystem /opt/homebrew/include
+  OBJECT_DIR = tgbot-cpp/CMakeFiles/TgBot.dir
+  OBJECT_FILE_DIR = tgbot-cpp/CMakeFiles/TgBot.dir/src/types
+  TARGET_COMPILE_PDB = tgbot-cpp/CMakeFiles/TgBot.dir/TgBot.pdb
+  TARGET_PDB = tgbot-cpp/libTgBot.pdb
+
+build tgbot-cpp/CMakeFiles/TgBot.dir/src/types/InlineQueryResult.cpp.o: CXX_COMPILER__TgBot_Debug /Users/anastasiapronina/C++Projects/TelegramBot/tgbot-cpp/src/types/InlineQueryResult.cpp || cmake_object_order_depends_target_TgBot
+  DEFINES = -DBOOST_ALL_DYN_LINK -DBOOST_SYSTEM_DYN_LINK -DBOOST_SYSTEM_NO_LIB -DHAVE_CURL
+  DEP_FILE = tgbot-cpp/CMakeFiles/TgBot.dir/src/types/InlineQueryResult.cpp.o.d
+  FLAGS = -Wall -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -fPIC -fcolor-diagnostics -std=c++14
+  INCLUDES = -I/opt/homebrew/Cellar/boost/1.80.0/include -I/Users/anastasiapronina/C++Projects/TelegramBot/tgbot-cpp/include -I/opt/homebrew/opt/openssl@3/include -isystem /opt/homebrew/include
+  OBJECT_DIR = tgbot-cpp/CMakeFiles/TgBot.dir
+  OBJECT_FILE_DIR = tgbot-cpp/CMakeFiles/TgBot.dir/src/types
+  TARGET_COMPILE_PDB = tgbot-cpp/CMakeFiles/TgBot.dir/TgBot.pdb
+  TARGET_PDB = tgbot-cpp/libTgBot.pdb
+
+build tgbot-cpp/CMakeFiles/TgBot.dir/src/types/InputFile.cpp.o: CXX_COMPILER__TgBot_Debug /Users/anastasiapronina/C++Projects/TelegramBot/tgbot-cpp/src/types/InputFile.cpp || cmake_object_order_depends_target_TgBot
+  DEFINES = -DBOOST_ALL_DYN_LINK -DBOOST_SYSTEM_DYN_LINK -DBOOST_SYSTEM_NO_LIB -DHAVE_CURL
+  DEP_FILE = tgbot-cpp/CMakeFiles/TgBot.dir/src/types/InputFile.cpp.o.d
+  FLAGS = -Wall -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -fPIC -fcolor-diagnostics -std=c++14
+  INCLUDES = -I/opt/homebrew/Cellar/boost/1.80.0/include -I/Users/anastasiapronina/C++Projects/TelegramBot/tgbot-cpp/include -I/opt/homebrew/opt/openssl@3/include -isystem /opt/homebrew/include
+  OBJECT_DIR = tgbot-cpp/CMakeFiles/TgBot.dir
+  OBJECT_FILE_DIR = tgbot-cpp/CMakeFiles/TgBot.dir/src/types
+  TARGET_COMPILE_PDB = tgbot-cpp/CMakeFiles/TgBot.dir/TgBot.pdb
+  TARGET_PDB = tgbot-cpp/libTgBot.pdb
+
+build tgbot-cpp/CMakeFiles/TgBot.dir/src/types/InputMedia.cpp.o: CXX_COMPILER__TgBot_Debug /Users/anastasiapronina/C++Projects/TelegramBot/tgbot-cpp/src/types/InputMedia.cpp || cmake_object_order_depends_target_TgBot
+  DEFINES = -DBOOST_ALL_DYN_LINK -DBOOST_SYSTEM_DYN_LINK -DBOOST_SYSTEM_NO_LIB -DHAVE_CURL
+  DEP_FILE = tgbot-cpp/CMakeFiles/TgBot.dir/src/types/InputMedia.cpp.o.d
+  FLAGS = -Wall -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -fPIC -fcolor-diagnostics -std=c++14
+  INCLUDES = -I/opt/homebrew/Cellar/boost/1.80.0/include -I/Users/anastasiapronina/C++Projects/TelegramBot/tgbot-cpp/include -I/opt/homebrew/opt/openssl@3/include -isystem /opt/homebrew/include
+  OBJECT_DIR = tgbot-cpp/CMakeFiles/TgBot.dir
+  OBJECT_FILE_DIR = tgbot-cpp/CMakeFiles/TgBot.dir/src/types
+  TARGET_COMPILE_PDB = tgbot-cpp/CMakeFiles/TgBot.dir/TgBot.pdb
+  TARGET_PDB = tgbot-cpp/libTgBot.pdb
+
+build tgbot-cpp/CMakeFiles/TgBot.dir/src/types/InputMessageContent.cpp.o: CXX_COMPILER__TgBot_Debug /Users/anastasiapronina/C++Projects/TelegramBot/tgbot-cpp/src/types/InputMessageContent.cpp || cmake_object_order_depends_target_TgBot
+  DEFINES = -DBOOST_ALL_DYN_LINK -DBOOST_SYSTEM_DYN_LINK -DBOOST_SYSTEM_NO_LIB -DHAVE_CURL
+  DEP_FILE = tgbot-cpp/CMakeFiles/TgBot.dir/src/types/InputMessageContent.cpp.o.d
+  FLAGS = -Wall -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -fPIC -fcolor-diagnostics -std=c++14
+  INCLUDES = -I/opt/homebrew/Cellar/boost/1.80.0/include -I/Users/anastasiapronina/C++Projects/TelegramBot/tgbot-cpp/include -I/opt/homebrew/opt/openssl@3/include -isystem /opt/homebrew/include
+  OBJECT_DIR = tgbot-cpp/CMakeFiles/TgBot.dir
+  OBJECT_FILE_DIR = tgbot-cpp/CMakeFiles/TgBot.dir/src/types
+  TARGET_COMPILE_PDB = tgbot-cpp/CMakeFiles/TgBot.dir/TgBot.pdb
+  TARGET_PDB = tgbot-cpp/libTgBot.pdb
+
+build tgbot-cpp/CMakeFiles/TgBot.dir/src/types/MenuButton.cpp.o: CXX_COMPILER__TgBot_Debug /Users/anastasiapronina/C++Projects/TelegramBot/tgbot-cpp/src/types/MenuButton.cpp || cmake_object_order_depends_target_TgBot
+  DEFINES = -DBOOST_ALL_DYN_LINK -DBOOST_SYSTEM_DYN_LINK -DBOOST_SYSTEM_NO_LIB -DHAVE_CURL
+  DEP_FILE = tgbot-cpp/CMakeFiles/TgBot.dir/src/types/MenuButton.cpp.o.d
+  FLAGS = -Wall -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -fPIC -fcolor-diagnostics -std=c++14
+  INCLUDES = -I/opt/homebrew/Cellar/boost/1.80.0/include -I/Users/anastasiapronina/C++Projects/TelegramBot/tgbot-cpp/include -I/opt/homebrew/opt/openssl@3/include -isystem /opt/homebrew/include
+  OBJECT_DIR = tgbot-cpp/CMakeFiles/TgBot.dir
+  OBJECT_FILE_DIR = tgbot-cpp/CMakeFiles/TgBot.dir/src/types
+  TARGET_COMPILE_PDB = tgbot-cpp/CMakeFiles/TgBot.dir/TgBot.pdb
+  TARGET_PDB = tgbot-cpp/libTgBot.pdb
+
+build tgbot-cpp/CMakeFiles/TgBot.dir/src/types/PassportElementError.cpp.o: CXX_COMPILER__TgBot_Debug /Users/anastasiapronina/C++Projects/TelegramBot/tgbot-cpp/src/types/PassportElementError.cpp || cmake_object_order_depends_target_TgBot
+  DEFINES = -DBOOST_ALL_DYN_LINK -DBOOST_SYSTEM_DYN_LINK -DBOOST_SYSTEM_NO_LIB -DHAVE_CURL
+  DEP_FILE = tgbot-cpp/CMakeFiles/TgBot.dir/src/types/PassportElementError.cpp.o.d
+  FLAGS = -Wall -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -fPIC -fcolor-diagnostics -std=c++14
+  INCLUDES = -I/opt/homebrew/Cellar/boost/1.80.0/include -I/Users/anastasiapronina/C++Projects/TelegramBot/tgbot-cpp/include -I/opt/homebrew/opt/openssl@3/include -isystem /opt/homebrew/include
+  OBJECT_DIR = tgbot-cpp/CMakeFiles/TgBot.dir
+  OBJECT_FILE_DIR = tgbot-cpp/CMakeFiles/TgBot.dir/src/types
+  TARGET_COMPILE_PDB = tgbot-cpp/CMakeFiles/TgBot.dir/TgBot.pdb
+  TARGET_PDB = tgbot-cpp/libTgBot.pdb
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target TgBot
+
+
+#############################################
+# Link the static library tgbot-cpp/libTgBot.a
+
+build tgbot-cpp/libTgBot.a: CXX_STATIC_LIBRARY_LINKER__TgBot_Debug tgbot-cpp/CMakeFiles/TgBot.dir/src/Api.cpp.o tgbot-cpp/CMakeFiles/TgBot.dir/src/Bot.cpp.o tgbot-cpp/CMakeFiles/TgBot.dir/src/EventHandler.cpp.o tgbot-cpp/CMakeFiles/TgBot.dir/src/TgException.cpp.o tgbot-cpp/CMakeFiles/TgBot.dir/src/TgTypeParser.cpp.o tgbot-cpp/CMakeFiles/TgBot.dir/src/net/BoostHttpOnlySslClient.cpp.o tgbot-cpp/CMakeFiles/TgBot.dir/src/net/CurlHttpClient.cpp.o tgbot-cpp/CMakeFiles/TgBot.dir/src/net/HttpParser.cpp.o tgbot-cpp/CMakeFiles/TgBot.dir/src/net/TgLongPoll.cpp.o tgbot-cpp/CMakeFiles/TgBot.dir/src/net/Url.cpp.o tgbot-cpp/CMakeFiles/TgBot.dir/src/tools/FileTools.cpp.o tgbot-cpp/CMakeFiles/TgBot.dir/src/tools/StringTools.cpp.o tgbot-cpp/CMakeFiles/TgBot.dir/src/types/BotCommandScope.cpp.o tgbot-cpp/CMakeFiles/TgBot.dir/src/types/ChatMember.cpp.o tgbot-cpp/CMakeFiles/TgBot.dir/src/types/InlineQueryResult.cpp.o tgbot-cpp/CMakeFiles/TgBot.dir/src/types/InputFile.cpp.o tgbot-cpp/CMakeFiles/TgBot.dir/src/types/InputMedia.cpp.o tgbot-cpp/CMakeFiles/TgBot.dir/src/types/InputMessageContent.cpp.o tgbot-cpp/CMakeFiles/TgBot.dir/src/types/MenuButton.cpp.o tgbot-cpp/CMakeFiles/TgBot.dir/src/types/PassportElementError.cpp.o || /opt/homebrew/lib/libboost_system-mt.dylib
+  ARCH_FLAGS = -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk
+  LANGUAGE_COMPILE_FLAGS = -Wall -g
+  OBJECT_DIR = tgbot-cpp/CMakeFiles/TgBot.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_COMPILE_PDB = tgbot-cpp/CMakeFiles/TgBot.dir/TgBot.pdb
+  TARGET_FILE = tgbot-cpp/libTgBot.a
+  TARGET_PDB = tgbot-cpp/libTgBot.pdb
+
+
+#############################################
+# Utility command for edit_cache
+
+build tgbot-cpp/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/anastasiapronina/C++Projects/TelegramBot/cmake-build-debug/tgbot-cpp && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build tgbot-cpp/edit_cache: phony tgbot-cpp/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build tgbot-cpp/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/anastasiapronina/C++Projects/TelegramBot/cmake-build-debug/tgbot-cpp && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S/Users/anastasiapronina/C++Projects/TelegramBot -B/Users/anastasiapronina/C++Projects/TelegramBot/cmake-build-debug
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build tgbot-cpp/rebuild_cache: phony tgbot-cpp/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build tgbot-cpp/list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build tgbot-cpp/CMakeFiles/install.util: CUSTOM_COMMAND tgbot-cpp/all
+  COMMAND = cd /Users/anastasiapronina/C++Projects/TelegramBot/cmake-build-debug/tgbot-cpp && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -P cmake_install.cmake
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build tgbot-cpp/install: phony tgbot-cpp/CMakeFiles/install.util
+
+
+#############################################
+# Utility command for install/local
+
+build tgbot-cpp/CMakeFiles/install/local.util: CUSTOM_COMMAND tgbot-cpp/all
+  COMMAND = cd /Users/anastasiapronina/C++Projects/TelegramBot/cmake-build-debug/tgbot-cpp && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build tgbot-cpp/install/local: phony tgbot-cpp/CMakeFiles/install/local.util
+
+
+#############################################
+# Utility command for install/strip
+
+build tgbot-cpp/CMakeFiles/install/strip.util: CUSTOM_COMMAND tgbot-cpp/all
+  COMMAND = cd /Users/anastasiapronina/C++Projects/TelegramBot/cmake-build-debug/tgbot-cpp && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+  DESC = Installing the project stripped...
+  pool = console
+  restat = 1
+
+build tgbot-cpp/install/strip: phony tgbot-cpp/CMakeFiles/install/strip.util
+
+# =============================================================================
+# Target aliases.
+
+build TgBot: phony tgbot-cpp/libTgBot.a
+
+build libTgBot.a: phony tgbot-cpp/libTgBot.a
+
+# =============================================================================
+# Folder targets.
+
+# =============================================================================
+
+#############################################
+# Folder: /Users/anastasiapronina/C++Projects/TelegramBot/cmake-build-debug
+
+build all: phony TelegramBot nlohmann_json/all tgbot-cpp/all
+
+# =============================================================================
+
+#############################################
+# Folder: /Users/anastasiapronina/C++Projects/TelegramBot/cmake-build-debug/nlohmann_json
+
+build nlohmann_json/all: phony
+
+# =============================================================================
+
+#############################################
+# Folder: /Users/anastasiapronina/C++Projects/TelegramBot/cmake-build-debug/tgbot-cpp
+
+build tgbot-cpp/all: phony tgbot-cpp/libTgBot.a
+
+# =============================================================================
+# Built-in targets
+
+
+#############################################
+# Re-run CMake if any of its inputs changed.
+
+build build.ninja: RERUN_CMAKE | /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeCCompiler.cmake.in /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeCCompilerABI.c /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeCInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeCXXCompiler.cmake.in /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeCXXCompilerABI.cpp /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeCXXInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeCommonLanguageInclude.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeCompilerIdDetection.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeDetermineCCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeDetermineCXXCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeDetermineCompileFeatures.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeDetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeDetermineCompilerABI.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeDetermineCompilerId.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeDetermineSystem.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeFindBinUtils.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeGenericSystem.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeInitializeConfigs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeLanguageInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakePackageConfigHelpers.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeParseImplicitIncludeInfo.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeParseImplicitLinkInfo.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeParseLibraryArchitecture.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeSystem.cmake.in /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeSystemSpecificInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeSystemSpecificInitialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeTestCCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeTestCXXCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeTestCompilerCommon.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CheckCSourceCompiles.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CheckIncludeFile.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CheckLibraryExists.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/ADSP-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/ARMCC-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/ARMClang-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/AppleClang-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/Borland-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/Bruce-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/Clang-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/Clang-DetermineCompilerInternal.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/Comeau-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/Compaq-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/Cray-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/Embarcadero-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/Fujitsu-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/GHS-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/GNU-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/GNU.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/HP-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/HP-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/IAR-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/IBMClang-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/Intel-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/LCC-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/MSVC-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/NVHPC-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/NVIDIA-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/PGI-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/PathScale-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/SCO-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/SDCC-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/SunPro-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/TI-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/Watcom-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/XL-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/XL-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/XLClang-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/zOS-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/ExternalProject.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/FindBoost.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/FindCURL.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/FindOpenSSL.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/FindPackageHandleStandardArgs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/FindPackageMessage.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/FindPkgConfig.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/FindThreads.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/FindZLIB.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/GNUInstallDirs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Internal/CheckSourceCompiles.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Internal/FeatureTesting.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Apple-AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Apple-AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Apple-Clang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Apple-Clang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Apple-Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Darwin-Determine-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Darwin-Initialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Darwin.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/UnixPaths.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/SelectLibraryConfigurations.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/WriteBasicConfigVersionFile.cmake /Users/anastasiapronina/C++Projects/TelegramBot/CMakeLists.txt /Users/anastasiapronina/C++Projects/TelegramBot/nlohmann_json/CMakeLists.txt /Users/anastasiapronina/C++Projects/TelegramBot/nlohmann_json/cmake/config.cmake.in /Users/anastasiapronina/C++Projects/TelegramBot/nlohmann_json/cmake/nlohmann_jsonConfigVersion.cmake.in /Users/anastasiapronina/C++Projects/TelegramBot/nlohmann_json/cmake/pkg-config.pc.in /Users/anastasiapronina/C++Projects/TelegramBot/tgbot-cpp/CMakeLists.txt /opt/homebrew/lib/cmake/Boost-1.80.0/BoostConfig.cmake /opt/homebrew/lib/cmake/Boost-1.80.0/BoostConfigVersion.cmake /opt/homebrew/lib/cmake/BoostDetectToolset-1.80.0.cmake /opt/homebrew/lib/cmake/boost_headers-1.80.0/boost_headers-config-version.cmake /opt/homebrew/lib/cmake/boost_headers-1.80.0/boost_headers-config.cmake /opt/homebrew/lib/cmake/boost_system-1.80.0/boost_system-config-version.cmake /opt/homebrew/lib/cmake/boost_system-1.80.0/boost_system-config.cmake /opt/homebrew/lib/cmake/boost_system-1.80.0/libboost_system-variant-mt-shared.cmake /opt/homebrew/lib/cmake/boost_system-1.80.0/libboost_system-variant-mt-static.cmake /opt/homebrew/lib/cmake/boost_system-1.80.0/libboost_system-variant-shared.cmake /opt/homebrew/lib/cmake/boost_system-1.80.0/libboost_system-variant-static.cmake CMakeCache.txt CMakeFiles/3.24.2/CMakeCCompiler.cmake CMakeFiles/3.24.2/CMakeCXXCompiler.cmake CMakeFiles/3.24.2/CMakeSystem.cmake
+  pool = console
+
+
+#############################################
+# A missing CMake input file is not an error.
+
+build /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeCCompiler.cmake.in /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeCCompilerABI.c /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeCInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeCXXCompiler.cmake.in /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeCXXCompilerABI.cpp /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeCXXInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeCommonLanguageInclude.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeCompilerIdDetection.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeDetermineCCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeDetermineCXXCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeDetermineCompileFeatures.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeDetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeDetermineCompilerABI.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeDetermineCompilerId.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeDetermineSystem.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeFindBinUtils.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeGenericSystem.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeInitializeConfigs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeLanguageInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakePackageConfigHelpers.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeParseImplicitIncludeInfo.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeParseImplicitLinkInfo.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeParseLibraryArchitecture.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeSystem.cmake.in /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeSystemSpecificInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeSystemSpecificInitialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeTestCCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeTestCXXCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeTestCompilerCommon.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CheckCSourceCompiles.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CheckIncludeFile.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CheckLibraryExists.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/ADSP-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/ARMCC-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/ARMClang-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/AppleClang-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/Borland-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/Bruce-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/Clang-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/Clang-DetermineCompilerInternal.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/Comeau-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/Compaq-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/Cray-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/Embarcadero-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/Fujitsu-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/GHS-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/GNU-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/GNU.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/HP-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/HP-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/IAR-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/IBMClang-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/Intel-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/LCC-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/MSVC-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/NVHPC-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/NVIDIA-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/PGI-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/PathScale-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/SCO-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/SDCC-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/SunPro-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/TI-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/Watcom-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/XL-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/XL-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/XLClang-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/zOS-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/ExternalProject.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/FindBoost.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/FindCURL.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/FindOpenSSL.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/FindPackageHandleStandardArgs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/FindPackageMessage.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/FindPkgConfig.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/FindThreads.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/FindZLIB.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/GNUInstallDirs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Internal/CheckSourceCompiles.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Internal/FeatureTesting.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Apple-AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Apple-AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Apple-Clang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Apple-Clang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Apple-Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Darwin-Determine-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Darwin-Initialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Darwin.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/UnixPaths.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/SelectLibraryConfigurations.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/WriteBasicConfigVersionFile.cmake /Users/anastasiapronina/C++Projects/TelegramBot/CMakeLists.txt /Users/anastasiapronina/C++Projects/TelegramBot/nlohmann_json/CMakeLists.txt /Users/anastasiapronina/C++Projects/TelegramBot/nlohmann_json/cmake/config.cmake.in /Users/anastasiapronina/C++Projects/TelegramBot/nlohmann_json/cmake/nlohmann_jsonConfigVersion.cmake.in /Users/anastasiapronina/C++Projects/TelegramBot/nlohmann_json/cmake/pkg-config.pc.in /Users/anastasiapronina/C++Projects/TelegramBot/tgbot-cpp/CMakeLists.txt /opt/homebrew/lib/cmake/Boost-1.80.0/BoostConfig.cmake /opt/homebrew/lib/cmake/Boost-1.80.0/BoostConfigVersion.cmake /opt/homebrew/lib/cmake/BoostDetectToolset-1.80.0.cmake /opt/homebrew/lib/cmake/boost_headers-1.80.0/boost_headers-config-version.cmake /opt/homebrew/lib/cmake/boost_headers-1.80.0/boost_headers-config.cmake /opt/homebrew/lib/cmake/boost_system-1.80.0/boost_system-config-version.cmake /opt/homebrew/lib/cmake/boost_system-1.80.0/boost_system-config.cmake /opt/homebrew/lib/cmake/boost_system-1.80.0/libboost_system-variant-mt-shared.cmake /opt/homebrew/lib/cmake/boost_system-1.80.0/libboost_system-variant-mt-static.cmake /opt/homebrew/lib/cmake/boost_system-1.80.0/libboost_system-variant-shared.cmake /opt/homebrew/lib/cmake/boost_system-1.80.0/libboost_system-variant-static.cmake CMakeCache.txt CMakeFiles/3.24.2/CMakeCCompiler.cmake CMakeFiles/3.24.2/CMakeCXXCompiler.cmake CMakeFiles/3.24.2/CMakeSystem.cmake: phony
+
+
+#############################################
+# Clean all the built files.
+
+build clean: CLEAN
+
+
+#############################################
+# Print all primary targets available.
+
+build help: HELP
+
+
+#############################################
+# Make the all target the default.
+
+default all

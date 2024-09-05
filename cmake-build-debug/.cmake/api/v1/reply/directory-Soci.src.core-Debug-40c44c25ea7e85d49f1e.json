@@ -1,0 +1,226 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install"
+		],
+		"files" : 
+		[
+			"Soci/src/core/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 117,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 120,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 128,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 135,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 139,
+				"parent" : 0
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "include/soci",
+			"paths" : 
+			[
+				"Soci/include/soci/backend-loader.h",
+				"Soci/include/soci/bind-values.h",
+				"Soci/include/soci/blob-exchange.h",
+				"Soci/include/soci/blob.h",
+				"Soci/include/soci/boost-fusion.h",
+				"Soci/include/soci/boost-gregorian-date.h",
+				"Soci/include/soci/boost-optional.h",
+				"Soci/include/soci/boost-tuple.h",
+				"Soci/include/soci/callbacks.h",
+				"Soci/include/soci/column-info.h",
+				"Soci/include/soci/connection-parameters.h",
+				"Soci/include/soci/connection-pool.h",
+				"Soci/include/soci/error.h",
+				"Soci/include/soci/exchange-traits.h",
+				"Soci/include/soci/into-type.h",
+				"Soci/include/soci/into.h",
+				"Soci/include/soci/logger.h",
+				"Soci/include/soci/noreturn.h",
+				"Soci/include/soci/once-temp-type.h",
+				"Soci/include/soci/prepare-temp-type.h",
+				"Soci/include/soci/procedure.h",
+				"Soci/include/soci/query_transformation.h",
+				"Soci/include/soci/ref-counted-prepare-info.h",
+				"Soci/include/soci/ref-counted-statement.h",
+				"Soci/include/soci/row-exchange.h",
+				"Soci/include/soci/row.h",
+				"Soci/include/soci/rowid-exchange.h",
+				"Soci/include/soci/rowid.h",
+				"Soci/include/soci/rowset.h",
+				"Soci/include/soci/session.h",
+				"Soci/include/soci/soci-backend.h",
+				"Soci/include/soci/soci-platform.h",
+				"Soci/include/soci/soci-simple.h",
+				"Soci/include/soci/soci.h",
+				"Soci/include/soci/statement.h",
+				"Soci/include/soci/std-optional.h",
+				"Soci/include/soci/transaction.h",
+				"Soci/include/soci/type-conversion-traits.h",
+				"Soci/include/soci/type-conversion.h",
+				"Soci/include/soci/type-holder.h",
+				"Soci/include/soci/type-ptr.h",
+				"Soci/include/soci/type-wrappers.h",
+				"Soci/include/soci/unsigned-types.h",
+				"Soci/include/soci/use-type.h",
+				"Soci/include/soci/use.h",
+				"Soci/include/soci/values-exchange.h",
+				"Soci/include/soci/values.h",
+				"Soci/include/soci/version.h"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 2,
+			"component" : "Unspecified",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"lib/libsoci_core.4.1.0.dylib",
+				"lib/libsoci_core.4.1.dylib"
+			],
+			"targetId" : "soci_core::@67145c94faf853ddbf77",
+			"targetIndex" : 3,
+			"targetInstallNamelink" : "skip",
+			"type" : "target"
+		},
+		{
+			"backtrace" : 2,
+			"component" : "Unspecified",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"lib/libsoci_core.dylib"
+			],
+			"targetId" : "soci_core::@67145c94faf853ddbf77",
+			"targetIndex" : 3,
+			"targetInstallNamelink" : "only",
+			"type" : "target"
+		},
+		{
+			"backtrace" : 3,
+			"component" : "Unspecified",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"lib/libsoci_core.a"
+			],
+			"targetId" : "soci_core_static::@67145c94faf853ddbf77",
+			"targetIndex" : 4,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 4,
+			"component" : "Unspecified",
+			"destination" : "lib/cmake/SOCI",
+			"exportName" : "SOCI",
+			"exportTargets" : 
+			[
+				{
+					"id" : "soci_core::@67145c94faf853ddbf77",
+					"index" : 3
+				},
+				{
+					"id" : "soci_core_static::@67145c94faf853ddbf77",
+					"index" : 4
+				},
+				{
+					"id" : "soci_empty::@8ea3c135b6324d6835a7",
+					"index" : 5
+				},
+				{
+					"id" : "soci_empty_static::@8ea3c135b6324d6835a7",
+					"index" : 6
+				},
+				{
+					"id" : "soci_mysql::@a20d7f20f30e2e568402",
+					"index" : 9
+				},
+				{
+					"id" : "soci_mysql_static::@a20d7f20f30e2e568402",
+					"index" : 10
+				},
+				{
+					"id" : "soci_odbc::@6b4501392bee99e162f3",
+					"index" : 13
+				},
+				{
+					"id" : "soci_odbc_static::@6b4501392bee99e162f3",
+					"index" : 14
+				},
+				{
+					"id" : "soci_postgresql::@c171f4797fe13498ec7b",
+					"index" : 21
+				},
+				{
+					"id" : "soci_postgresql_static::@c171f4797fe13498ec7b",
+					"index" : 22
+				},
+				{
+					"id" : "soci_sqlite3::@928246ccf967e6fc895c",
+					"index" : 25
+				},
+				{
+					"id" : "soci_sqlite3_static::@928246ccf967e6fc895c",
+					"index" : 26
+				}
+			],
+			"paths" : 
+			[
+				"Soci/src/core/CMakeFiles/Export/39447b8616a7e0144dc6bdda034be1e2/SOCITargets.cmake"
+			],
+			"type" : "export"
+		},
+		{
+			"backtrace" : 5,
+			"component" : "Unspecified",
+			"destination" : "lib/cmake/SOCI",
+			"paths" : 
+			[
+				"cmake-build-debug/Soci/src/core/SOCIConfig.cmake",
+				"cmake-build-debug/Soci/src/core/SOCIConfigVersion.cmake"
+			],
+			"type" : "file"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "Soci/src/core",
+		"source" : "Soci/src/core"
+	}
+}

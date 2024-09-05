@@ -1,0 +1,102 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install",
+			"soci_backend"
+		],
+		"files" : 
+		[
+			"Soci/cmake/SociBackend.cmake",
+			"Soci/src/backends/sqlite3/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 12,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 211,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 216,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 224,
+				"parent" : 1
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 2,
+			"component" : "Unspecified",
+			"destination" : "include/soci/sqlite3",
+			"paths" : 
+			[
+				"Soci/include/soci/sqlite3/soci-sqlite3.h"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 3,
+			"component" : "Unspecified",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"lib/libsoci_sqlite3.4.1.0.dylib",
+				"lib/libsoci_sqlite3.4.1.dylib"
+			],
+			"targetId" : "soci_sqlite3::@928246ccf967e6fc895c",
+			"targetIndex" : 25,
+			"targetInstallNamelink" : "skip",
+			"type" : "target"
+		},
+		{
+			"backtrace" : 3,
+			"component" : "Unspecified",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"lib/libsoci_sqlite3.dylib"
+			],
+			"targetId" : "soci_sqlite3::@928246ccf967e6fc895c",
+			"targetIndex" : 25,
+			"targetInstallNamelink" : "only",
+			"type" : "target"
+		},
+		{
+			"backtrace" : 4,
+			"component" : "Unspecified",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"lib/libsoci_sqlite3.a"
+			],
+			"targetId" : "soci_sqlite3_static::@928246ccf967e6fc895c",
+			"targetIndex" : 26,
+			"type" : "target"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "Soci/src/backends/sqlite3",
+		"source" : "Soci/src/backends/sqlite3"
+	}
+}

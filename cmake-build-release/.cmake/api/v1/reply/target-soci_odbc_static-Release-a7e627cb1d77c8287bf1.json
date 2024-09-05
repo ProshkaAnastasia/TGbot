@@ -1,0 +1,254 @@
+{
+	"archive" : {},
+	"artifacts" : 
+	[
+		{
+			"path" : "lib/libsoci_odbc.a"
+		}
+	],
+	"backtrace" : 2,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"soci_backend",
+			"install",
+			"set_directory_properties"
+		],
+		"files" : 
+		[
+			"Soci/cmake/SociBackend.cmake",
+			"Soci/src/backends/odbc/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 11,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 192,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 224,
+				"parent" : 1
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 120,
+				"parent" : 1
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : " -pedantic -Wno-error=parentheses -Wall -Wextra -Wpointer-arith -Wcast-align -Wcast-qual -Wfloat-equal -Woverloaded-virtual -Wredundant-decls -Wno-long-long  -O3 -DNDEBUG -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -fvisibility=hidden -fcolor-diagnostics"
+				},
+				{
+					"fragment" : "-std=gnu++20"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 4,
+					"define" : "BOOST_ALL_NO_LIB"
+				},
+				{
+					"backtrace" : 4,
+					"define" : "HAVE_DL=1"
+				},
+				{
+					"backtrace" : 4,
+					"define" : "SOCI_ABI_VERSION=\"4.1\""
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 4,
+					"path" : "/Users/anastasiapronina/OpenSSL/include"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "/opt/homebrew/Cellar/boost/1.80.0/include"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "/Library/PostgreSQL/15/include"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "/opt/homebrew/include"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "/Users/anastasiapronina/C++Projects/TelegramBot/cmake-build-release/Soci"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "/Users/anastasiapronina/C++Projects/TelegramBot/Soci/include"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "/Users/anastasiapronina/C++Projects/TelegramBot/cmake-build-release/Soci/include"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "/Users/anastasiapronina/C++Projects/TelegramBot/Soci/include/private"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "/opt/homebrew/Cellar/unixodbc/2.3.11/include"
+				}
+			],
+			"language" : "CXX",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					2
+				],
+				"standard" : "20"
+			},
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8
+			]
+		}
+	],
+	"id" : "soci_odbc_static::@6b4501392bee99e162f3",
+	"install" : 
+	{
+		"destinations" : 
+		[
+			{
+				"backtrace" : 3,
+				"path" : "lib"
+			}
+		],
+		"prefix" : 
+		{
+			"path" : "/usr/local"
+		}
+	},
+	"name" : "soci_odbc_static",
+	"nameOnDisk" : "libsoci_odbc.a",
+	"paths" : 
+	{
+		"build" : "Soci/src/backends/odbc",
+		"source" : "Soci/src/backends/odbc"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8
+			]
+		},
+		{
+			"name" : "Header Files",
+			"sourceIndexes" : 
+			[
+				9
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "Soci/src/backends/odbc/blob.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "Soci/src/backends/odbc/factory.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "Soci/src/backends/odbc/row-id.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "Soci/src/backends/odbc/session.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "Soci/src/backends/odbc/standard-into-type.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "Soci/src/backends/odbc/standard-use-type.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "Soci/src/backends/odbc/statement.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "Soci/src/backends/odbc/vector-into-type.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "Soci/src/backends/odbc/vector-use-type.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"path" : "Soci/include/soci/odbc/soci-odbc.h",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "STATIC_LIBRARY"
+}

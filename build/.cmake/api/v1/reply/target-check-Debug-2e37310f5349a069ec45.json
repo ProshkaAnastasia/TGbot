@@ -1,0 +1,274 @@
+{
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_custom_target",
+			"add_dependencies",
+			"soci_backend_test"
+		],
+		"files" : 
+		[
+			"Soci/CMakeLists.txt",
+			"Soci/cmake/SociBackend.cmake",
+			"Soci/tests/empty/CMakeLists.txt",
+			"Soci/tests/mysql/CMakeLists.txt",
+			"Soci/tests/odbc/CMakeLists.txt",
+			"Soci/tests/postgresql/CMakeLists.txt",
+			"Soci/tests/sqlite3/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 229,
+				"parent" : 0
+			},
+			{
+				"file" : 2
+			},
+			{
+				"command" : 2,
+				"file" : 2,
+				"line" : 12,
+				"parent" : 2
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 356,
+				"parent" : 3
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 378,
+				"parent" : 3
+			},
+			{
+				"file" : 3
+			},
+			{
+				"command" : 2,
+				"file" : 3,
+				"line" : 12,
+				"parent" : 6
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 356,
+				"parent" : 7
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 378,
+				"parent" : 7
+			},
+			{
+				"file" : 4
+			},
+			{
+				"command" : 2,
+				"file" : 4,
+				"line" : 31,
+				"parent" : 10
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 356,
+				"parent" : 11
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 378,
+				"parent" : 11
+			},
+			{
+				"command" : 2,
+				"file" : 4,
+				"line" : 38,
+				"parent" : 10
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 356,
+				"parent" : 14
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 378,
+				"parent" : 14
+			},
+			{
+				"command" : 2,
+				"file" : 4,
+				"line" : 50,
+				"parent" : 10
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 356,
+				"parent" : 17
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 378,
+				"parent" : 17
+			},
+			{
+				"file" : 5
+			},
+			{
+				"command" : 2,
+				"file" : 5,
+				"line" : 12,
+				"parent" : 20
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 356,
+				"parent" : 21
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 378,
+				"parent" : 21
+			},
+			{
+				"file" : 6
+			},
+			{
+				"command" : 2,
+				"file" : 6,
+				"line" : 12,
+				"parent" : 24
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 356,
+				"parent" : 25
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 378,
+				"parent" : 25
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 4,
+			"id" : "soci_empty_test::@c50f661dfc960914da61"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "soci_empty_test_static::@c50f661dfc960914da61"
+		},
+		{
+			"backtrace" : 8,
+			"id" : "soci_mysql_test::@5ff8ed5050726ef37832"
+		},
+		{
+			"backtrace" : 9,
+			"id" : "soci_mysql_test_static::@5ff8ed5050726ef37832"
+		},
+		{
+			"backtrace" : 12,
+			"id" : "soci_odbc_test_mssql::@e0f619d9c0a43afd1863"
+		},
+		{
+			"backtrace" : 13,
+			"id" : "soci_odbc_test_mssql_static::@e0f619d9c0a43afd1863"
+		},
+		{
+			"backtrace" : 15,
+			"id" : "soci_odbc_test_mysql::@e0f619d9c0a43afd1863"
+		},
+		{
+			"backtrace" : 16,
+			"id" : "soci_odbc_test_mysql_static::@e0f619d9c0a43afd1863"
+		},
+		{
+			"backtrace" : 18,
+			"id" : "soci_odbc_test_postgresql::@e0f619d9c0a43afd1863"
+		},
+		{
+			"backtrace" : 19,
+			"id" : "soci_odbc_test_postgresql_static::@e0f619d9c0a43afd1863"
+		},
+		{
+			"backtrace" : 22,
+			"id" : "soci_postgresql_test::@e5e7c2322852367a1260"
+		},
+		{
+			"backtrace" : 23,
+			"id" : "soci_postgresql_test_static::@e5e7c2322852367a1260"
+		},
+		{
+			"backtrace" : 26,
+			"id" : "soci_sqlite3_test::@ef1c9eaa307e05fbf09f"
+		},
+		{
+			"backtrace" : 27,
+			"id" : "soci_sqlite3_test_static::@ef1c9eaa307e05fbf09f"
+		}
+	],
+	"id" : "check::@52f81d4694c492f83beb",
+	"name" : "check",
+	"paths" : 
+	{
+		"build" : "Soci",
+		"source" : "Soci"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		},
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				1
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/Soci/CMakeFiles/check",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Soci/CMakeFiles/check.rule",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "UTILITY"
+}

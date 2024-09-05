@@ -1,0 +1,268 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "bin/soci_sqlite3_test"
+		}
+	],
+	"backtrace" : 2,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_executable",
+			"soci_backend_test",
+			"link_directories",
+			"target_link_libraries",
+			"set_directory_properties"
+		],
+		"files" : 
+		[
+			"Soci/cmake/SociBackend.cmake",
+			"Soci/tests/sqlite3/CMakeLists.txt",
+			"CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 12,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 341,
+				"parent" : 1
+			},
+			{
+				"file" : 2
+			},
+			{
+				"command" : 2,
+				"file" : 2,
+				"line" : 29,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 343,
+				"parent" : 1
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 322,
+				"parent" : 1
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : " -pedantic -Wno-error=parentheses -Wall -Wextra -Wpointer-arith -Wcast-align -Wcast-qual -Wfloat-equal -Woverloaded-virtual -Wredundant-decls -Wno-long-long  -g -std=gnu++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -fvisibility=hidden"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 6,
+					"define" : "BOOST_ALL_NO_LIB"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "BOOST_DATE_TIME_DYN_LINK"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "BOOST_DATE_TIME_NO_LIB"
+				},
+				{
+					"backtrace" : 6,
+					"define" : "CATCH_CONFIG_CPP11_NO_SHUFFLE"
+				},
+				{
+					"backtrace" : 6,
+					"define" : "HAVE_DL=1"
+				},
+				{
+					"backtrace" : 6,
+					"define" : "SOCI_ABI_VERSION=\"4.1\""
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 6,
+					"path" : "/Users/anastasiapronina/OpenSSL/include"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "/opt/homebrew/Cellar/boost/1.80.0/include"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "/Library/PostgreSQL/15/include"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "/Users/anastasiapronina/C++Projects/TelegramBot/build/Soci"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "/Users/anastasiapronina/C++Projects/TelegramBot/Soci/include"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "/Users/anastasiapronina/C++Projects/TelegramBot/build/Soci/include"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "/Users/anastasiapronina/C++Projects/TelegramBot/Soci/include/private"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "/Users/anastasiapronina/C++Projects/TelegramBot/Soci/tests"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/Users/anastasiapronina/C++Projects/TelegramBot/Soci/src/core/../../include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/Users/anastasiapronina/C++Projects/TelegramBot/build/Soci/src/core/../../include"
+				},
+				{
+					"backtrace" : 6,
+					"isSystem" : true,
+					"path" : "/opt/homebrew/include"
+				}
+			],
+			"language" : "CXX",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					2
+				],
+				"standard" : "20"
+			},
+			"sourceIndexes" : 
+			[
+				0
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 5,
+			"id" : "soci_core::@67145c94faf853ddbf77"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "soci_sqlite3::@928246ccf967e6fc895c"
+		}
+	],
+	"id" : "soci_sqlite3_test::@ef1c9eaa307e05fbf09f",
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "-pedantic -Wno-error=parentheses -Wall -Wextra -Wpointer-arith -Wcast-align -Wcast-qual -Wfloat-equal -Woverloaded-virtual -Wredundant-decls -Wno-long-long  -g",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "-L/opt/homebrew/Cellar/boost/1.80.0/lib",
+				"role" : "libraryPath"
+			},
+			{
+				"fragment" : "-Wl,-rpath,/opt/homebrew/Cellar/boost/1.80.0/lib -Wl,-rpath,/Users/anastasiapronina/C++Projects/TelegramBot/build/lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 5,
+				"fragment" : "/Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/lib/libdl.tbd",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 5,
+				"fragment" : "/Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/lib/libsqlite3.tbd",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 5,
+				"fragment" : "../../../lib/libsoci_sqlite3.4.1.0.dylib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 5,
+				"fragment" : "/Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/lib/libsqlite3.tbd",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 5,
+				"fragment" : "../../../lib/libsoci_core.4.1.0.dylib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 5,
+				"fragment" : "/Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/lib/libdl.tbd",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 5,
+				"fragment" : "/opt/homebrew/lib/libboost_date_time-mt.dylib",
+				"role" : "libraries"
+			}
+		],
+		"language" : "CXX"
+	},
+	"name" : "soci_sqlite3_test",
+	"nameOnDisk" : "soci_sqlite3_test",
+	"paths" : 
+	{
+		"build" : "Soci/tests/sqlite3",
+		"source" : "Soci/tests/sqlite3"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0,
+				1
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "Soci/tests/sqlite3/test-sqlite3.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"path" : "Soci/tests/common-tests.h",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"type" : "EXECUTABLE"
+}

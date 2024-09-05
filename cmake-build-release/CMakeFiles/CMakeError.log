@@ -1,0 +1,90 @@
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /Library/Developer/CommandLineTools/usr/bin/cc 
+Build flags: 
+Id flags:  
+
+The output was:
+1
+ld: library not found for -lSystem
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /Library/Developer/CommandLineTools/usr/bin/c++ 
+Build flags: 
+Id flags:  
+
+The output was:
+1
+ld: library not found for -lc++
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+
+Determining if the __i386__ exist failed with the following output:
+Change Dir: /Users/anastasiapronina/C++Projects/TelegramBot/cmake-build-release/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/Applications/CLion.app/Contents/bin/ninja/mac/ninja cmTC_83438 && [1/2] Building CXX object CMakeFiles/cmTC_83438.dir/CheckSymbolExists.cxx.o
+FAILED: CMakeFiles/cmTC_83438.dir/CheckSymbolExists.cxx.o 
+/Library/Developer/CommandLineTools/usr/bin/c++   -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -fcolor-diagnostics -std=gnu++17 -MD -MT CMakeFiles/cmTC_83438.dir/CheckSymbolExists.cxx.o -MF CMakeFiles/cmTC_83438.dir/CheckSymbolExists.cxx.o.d -o CMakeFiles/cmTC_83438.dir/CheckSymbolExists.cxx.o -c /Users/anastasiapronina/C++Projects/TelegramBot/cmake-build-release/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx
+/Users/anastasiapronina/C++Projects/TelegramBot/cmake-build-release/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:7:19: error: use of undeclared identifier '__i386__'
+  return ((int*)(&__i386__))[argc];
+                  ^
+1 error generated.
+ninja: build stopped: subcommand failed.
+
+
+File /Users/anastasiapronina/C++Projects/TelegramBot/cmake-build-release/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:
+/* */
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef __i386__
+  return ((int*)(&__i386__))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the __arm__ exist failed with the following output:
+Change Dir: /Users/anastasiapronina/C++Projects/TelegramBot/cmake-build-release/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/Applications/CLion.app/Contents/bin/ninja/mac/ninja cmTC_9b0e1 && [1/2] Building CXX object CMakeFiles/cmTC_9b0e1.dir/CheckSymbolExists.cxx.o
+FAILED: CMakeFiles/cmTC_9b0e1.dir/CheckSymbolExists.cxx.o 
+/Library/Developer/CommandLineTools/usr/bin/c++   -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -fcolor-diagnostics -std=gnu++17 -MD -MT CMakeFiles/cmTC_9b0e1.dir/CheckSymbolExists.cxx.o -MF CMakeFiles/cmTC_9b0e1.dir/CheckSymbolExists.cxx.o.d -o CMakeFiles/cmTC_9b0e1.dir/CheckSymbolExists.cxx.o -c /Users/anastasiapronina/C++Projects/TelegramBot/cmake-build-release/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx
+/Users/anastasiapronina/C++Projects/TelegramBot/cmake-build-release/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:7:19: error: use of undeclared identifier '__arm__'
+  return ((int*)(&__arm__))[argc];
+                  ^
+1 error generated.
+ninja: build stopped: subcommand failed.
+
+
+File /Users/anastasiapronina/C++Projects/TelegramBot/cmake-build-release/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:
+/* */
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef __arm__
+  return ((int*)(&__arm__))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Performing C++ SOURCE FILE Test HAVE_MYSQL_OPT_EMBEDDED_CONNECTION failed with the following output:
+Change Dir: /Users/anastasiapronina/C++Projects/TelegramBot/cmake-build-release/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/Applications/CLion.app/Contents/bin/ninja/mac/ninja cmTC_d9b66 && [1/2] Building CXX object CMakeFiles/cmTC_d9b66.dir/src.cxx.o
+FAILED: CMakeFiles/cmTC_d9b66.dir/src.cxx.o 
+/Library/Developer/CommandLineTools/usr/bin/c++ -DHAVE_MYSQL_OPT_EMBEDDED_CONNECTION -I/usr/local/mysql/include -pedantic -Wno-error=parentheses -Wall -Wextra -Wpointer-arith -Wcast-align -Wcast-qual -Wfloat-equal -Woverloaded-virtual -Wredundant-decls -Wno-long-long   -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -fcolor-diagnostics -std=gnu++17 -MD -MT CMakeFiles/cmTC_d9b66.dir/src.cxx.o -MF CMakeFiles/cmTC_d9b66.dir/src.cxx.o.d -o CMakeFiles/cmTC_d9b66.dir/src.cxx.o -c /Users/anastasiapronina/C++Projects/TelegramBot/cmake-build-release/CMakeFiles/CMakeTmp/src.cxx
+/Users/anastasiapronina/C++Projects/TelegramBot/cmake-build-release/CMakeFiles/CMakeTmp/src.cxx:2:22: error: use of undeclared identifier 'MYSQL_OPT_USE_EMBEDDED_CONNECTION'
+int main() { int i = MYSQL_OPT_USE_EMBEDDED_CONNECTION; }
+                     ^
+1 error generated.
+ninja: build stopped: subcommand failed.
+
+
+Source file was:
+#include <mysql.h>
+int main() { int i = MYSQL_OPT_USE_EMBEDDED_CONNECTION; }

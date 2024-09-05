@@ -1,0 +1,27 @@
+# ninja log v5
+0	784	1673012329705852029	CMakeFiles/TelegramBot.dir/main.cpp.o	de3349439879b852
+785	857	1673012329783145785	TelegramBot	bf1f1eaa599b8590
+1	25	1673039477013901926	CMakeFiles/TelegramBot.dir/SQLDataBase.cpp.o	b9ac707c4929d19a
+3	318	1673039477306095157	tgbot-cpp/CMakeFiles/TgBot.dir/src/TgException.cpp.o	3ee5783a147798a3
+2	762	1673039477747227210	tgbot-cpp/CMakeFiles/TgBot.dir/src/EventHandler.cpp.o	fbf29b5c2fc20101
+763	1398	1673039478384126842	tgbot-cpp/CMakeFiles/TgBot.dir/src/net/CurlHttpClient.cpp.o	d337fc2ad73b1e87
+1399	2325	1673039479310602437	tgbot-cpp/CMakeFiles/TgBot.dir/src/net/HttpParser.cpp.o	cc769637bc1dab3b
+318	2418	1673039479399492869	tgbot-cpp/CMakeFiles/TgBot.dir/src/net/BoostHttpOnlySslClient.cpp.o	a69b9f599398e9cb
+2	2626	1673039479605847898	tgbot-cpp/CMakeFiles/TgBot.dir/src/Bot.cpp.o	cea4cfbdf12e896f
+2	2640	1673039479618063986	tgbot-cpp/CMakeFiles/TgBot.dir/src/Api.cpp.o	d4e63e2c0c61b221
+2420	2643	1673039479631383749	tgbot-cpp/CMakeFiles/TgBot.dir/src/net/Url.cpp.o	5b17bf4b6c8f2baf
+2643	2858	1673039479845833753	tgbot-cpp/CMakeFiles/TgBot.dir/src/types/BotCommandScope.cpp.o	fdbe4fc327a5dcc4
+1	2909	1673039479887853514	CMakeFiles/TelegramBot.dir/main.cpp.o	411f5462c4512254
+2627	2976	1673039479963225516	tgbot-cpp/CMakeFiles/TgBot.dir/src/tools/FileTools.cpp.o	d1cfdb287101128f
+2640	3007	1673039479995093995	tgbot-cpp/CMakeFiles/TgBot.dir/src/tools/StringTools.cpp.o	f66c27bb3a504023
+2858	3127	1673039480115133819	tgbot-cpp/CMakeFiles/TgBot.dir/src/types/ChatMember.cpp.o	f908249891a6b63b
+2909	3189	1673039480177278434	tgbot-cpp/CMakeFiles/TgBot.dir/src/types/InlineQueryResult.cpp.o	63a9abcc01fa50f6
+3007	3265	1673039480253454149	tgbot-cpp/CMakeFiles/TgBot.dir/src/types/InputMedia.cpp.o	feb08e4bd8f9484c
+2976	3294	1673039480282400733	tgbot-cpp/CMakeFiles/TgBot.dir/src/types/InputFile.cpp.o	237bfc6eaa940586
+3127	3378	1673039480366319046	tgbot-cpp/CMakeFiles/TgBot.dir/src/types/InputMessageContent.cpp.o	e92bcf2d006ba930
+3189	3410	1673039480398872738	tgbot-cpp/CMakeFiles/TgBot.dir/src/types/MenuButton.cpp.o	500501f4b6840f7d
+2326	3479	1673039480462278279	tgbot-cpp/CMakeFiles/TgBot.dir/src/net/TgLongPoll.cpp.o	1a2ccb751cdf97db
+3265	3504	1673039480492002284	tgbot-cpp/CMakeFiles/TgBot.dir/src/types/PassportElementError.cpp.o	6feb90128c3353bb
+25	4099	1673039481074431024	tgbot-cpp/CMakeFiles/TgBot.dir/src/TgTypeParser.cpp.o	907bc17c4ee0fedf
+4099	4197	1673039481188693000	tgbot-cpp/libTgBot.a	ff2a3ed93e153ca1
+4198	4394	1673039481383381542	TelegramBot	7faba69df5163534

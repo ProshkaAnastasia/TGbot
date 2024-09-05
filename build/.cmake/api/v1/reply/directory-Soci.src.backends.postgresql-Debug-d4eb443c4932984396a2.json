@@ -1,0 +1,102 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install",
+			"soci_backend"
+		],
+		"files" : 
+		[
+			"Soci/cmake/SociBackend.cmake",
+			"Soci/src/backends/postgresql/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 26,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 211,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 216,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 224,
+				"parent" : 1
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 2,
+			"component" : "Unspecified",
+			"destination" : "include/soci/postgresql",
+			"paths" : 
+			[
+				"Soci/include/soci/postgresql/soci-postgresql.h"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 3,
+			"component" : "Unspecified",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"lib/libsoci_postgresql.4.1.0.dylib",
+				"lib/libsoci_postgresql.4.1.dylib"
+			],
+			"targetId" : "soci_postgresql::@c171f4797fe13498ec7b",
+			"targetIndex" : 21,
+			"targetInstallNamelink" : "skip",
+			"type" : "target"
+		},
+		{
+			"backtrace" : 3,
+			"component" : "Unspecified",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"lib/libsoci_postgresql.dylib"
+			],
+			"targetId" : "soci_postgresql::@c171f4797fe13498ec7b",
+			"targetIndex" : 21,
+			"targetInstallNamelink" : "only",
+			"type" : "target"
+		},
+		{
+			"backtrace" : 4,
+			"component" : "Unspecified",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"lib/libsoci_postgresql.a"
+			],
+			"targetId" : "soci_postgresql_static::@c171f4797fe13498ec7b",
+			"targetIndex" : 22,
+			"type" : "target"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "Soci/src/backends/postgresql",
+		"source" : "Soci/src/backends/postgresql"
+	}
+}

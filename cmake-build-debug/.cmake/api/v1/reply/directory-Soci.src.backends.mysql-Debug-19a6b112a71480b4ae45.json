@@ -1,0 +1,102 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install",
+			"soci_backend"
+		],
+		"files" : 
+		[
+			"Soci/cmake/SociBackend.cmake",
+			"Soci/src/backends/mysql/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 11,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 211,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 216,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 224,
+				"parent" : 1
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 2,
+			"component" : "Unspecified",
+			"destination" : "include/soci/mysql",
+			"paths" : 
+			[
+				"Soci/include/soci/mysql/soci-mysql.h"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 3,
+			"component" : "Unspecified",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"lib/libsoci_mysql.4.1.0.dylib",
+				"lib/libsoci_mysql.4.1.dylib"
+			],
+			"targetId" : "soci_mysql::@a20d7f20f30e2e568402",
+			"targetIndex" : 9,
+			"targetInstallNamelink" : "skip",
+			"type" : "target"
+		},
+		{
+			"backtrace" : 3,
+			"component" : "Unspecified",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"lib/libsoci_mysql.dylib"
+			],
+			"targetId" : "soci_mysql::@a20d7f20f30e2e568402",
+			"targetIndex" : 9,
+			"targetInstallNamelink" : "only",
+			"type" : "target"
+		},
+		{
+			"backtrace" : 4,
+			"component" : "Unspecified",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"lib/libsoci_mysql.a"
+			],
+			"targetId" : "soci_mysql_static::@a20d7f20f30e2e568402",
+			"targetIndex" : 10,
+			"type" : "target"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "Soci/src/backends/mysql",
+		"source" : "Soci/src/backends/mysql"
+	}
+}

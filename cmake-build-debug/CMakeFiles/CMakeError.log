@@ -1,0 +1,120 @@
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /Library/Developer/CommandLineTools/usr/bin/cc 
+Build flags: 
+Id flags:  
+
+The output was:
+1
+ld: library not found for -lSystem
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /Library/Developer/CommandLineTools/usr/bin/c++ 
+Build flags: 
+Id flags:  
+
+The output was:
+1
+ld: library not found for -lc++
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+
+Determining if the __i386__ exist failed with the following output:
+Change Dir: /Users/anastasiapronina/C++Projects/TelegramBot/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_3db7e/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_3db7e.dir/build.make CMakeFiles/cmTC_3db7e.dir/build
+Building CXX object CMakeFiles/cmTC_3db7e.dir/CheckSymbolExists.cxx.o
+/Library/Developer/CommandLineTools/usr/bin/c++   -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -fcolor-diagnostics -std=gnu++17 -MD -MT CMakeFiles/cmTC_3db7e.dir/CheckSymbolExists.cxx.o -MF CMakeFiles/cmTC_3db7e.dir/CheckSymbolExists.cxx.o.d -o CMakeFiles/cmTC_3db7e.dir/CheckSymbolExists.cxx.o -c /Users/anastasiapronina/C++Projects/TelegramBot/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx
+[1m/Users/anastasiapronina/C++Projects/TelegramBot/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:7:19: [0m[0;1;31merror: [0m[1muse of undeclared identifier '__i386__'[0m
+  return ((int*)(&__i386__))[argc];
+[0;1;32m                  ^
+[0m1 error generated.
+make[1]: *** [CMakeFiles/cmTC_3db7e.dir/CheckSymbolExists.cxx.o] Error 1
+make: *** [cmTC_3db7e/fast] Error 2
+
+
+File /Users/anastasiapronina/C++Projects/TelegramBot/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:
+/* */
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef __i386__
+  return ((int*)(&__i386__))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the __x86_64__ exist failed with the following output:
+Change Dir: /Users/anastasiapronina/C++Projects/TelegramBot/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_b557a/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_b557a.dir/build.make CMakeFiles/cmTC_b557a.dir/build
+Building CXX object CMakeFiles/cmTC_b557a.dir/CheckSymbolExists.cxx.o
+/Library/Developer/CommandLineTools/usr/bin/c++   -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -fcolor-diagnostics -std=gnu++17 -MD -MT CMakeFiles/cmTC_b557a.dir/CheckSymbolExists.cxx.o -MF CMakeFiles/cmTC_b557a.dir/CheckSymbolExists.cxx.o.d -o CMakeFiles/cmTC_b557a.dir/CheckSymbolExists.cxx.o -c /Users/anastasiapronina/C++Projects/TelegramBot/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx
+[1m/Users/anastasiapronina/C++Projects/TelegramBot/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:7:19: [0m[0;1;31merror: [0m[1muse of undeclared identifier '__x86_64__'[0m
+  return ((int*)(&__x86_64__))[argc];
+[0;1;32m                  ^
+[0m1 error generated.
+make[1]: *** [CMakeFiles/cmTC_b557a.dir/CheckSymbolExists.cxx.o] Error 1
+make: *** [cmTC_b557a/fast] Error 2
+
+
+File /Users/anastasiapronina/C++Projects/TelegramBot/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:
+/* */
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef __x86_64__
+  return ((int*)(&__x86_64__))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the __arm__ exist failed with the following output:
+Change Dir: /Users/anastasiapronina/C++Projects/TelegramBot/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_1a3a6/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_1a3a6.dir/build.make CMakeFiles/cmTC_1a3a6.dir/build
+Building CXX object CMakeFiles/cmTC_1a3a6.dir/CheckSymbolExists.cxx.o
+/Library/Developer/CommandLineTools/usr/bin/c++   -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -fcolor-diagnostics -std=gnu++17 -MD -MT CMakeFiles/cmTC_1a3a6.dir/CheckSymbolExists.cxx.o -MF CMakeFiles/cmTC_1a3a6.dir/CheckSymbolExists.cxx.o.d -o CMakeFiles/cmTC_1a3a6.dir/CheckSymbolExists.cxx.o -c /Users/anastasiapronina/C++Projects/TelegramBot/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx
+[1m/Users/anastasiapronina/C++Projects/TelegramBot/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:7:19: [0m[0;1;31merror: [0m[1muse of undeclared identifier '__arm__'[0m
+  return ((int*)(&__arm__))[argc];
+[0;1;32m                  ^
+[0m1 error generated.
+make[1]: *** [CMakeFiles/cmTC_1a3a6.dir/CheckSymbolExists.cxx.o] Error 1
+make: *** [cmTC_1a3a6/fast] Error 2
+
+
+File /Users/anastasiapronina/C++Projects/TelegramBot/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:
+/* */
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef __arm__
+  return ((int*)(&__arm__))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Performing C++ SOURCE FILE Test HAVE_MYSQL_OPT_EMBEDDED_CONNECTION failed with the following output:
+Change Dir: /Users/anastasiapronina/C++Projects/TelegramBot/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_1a83c/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_1a83c.dir/build.make CMakeFiles/cmTC_1a83c.dir/build
+Building CXX object CMakeFiles/cmTC_1a83c.dir/src.cxx.o
+/Library/Developer/CommandLineTools/usr/bin/c++ -DHAVE_MYSQL_OPT_EMBEDDED_CONNECTION -I/usr/local/mysql/include -pedantic -Wno-error=parentheses -Wall -Wextra -Wpointer-arith -Wcast-align -Wcast-qual -Wfloat-equal -Woverloaded-virtual -Wredundant-decls -Wno-long-long   -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -fcolor-diagnostics -std=gnu++17 -MD -MT CMakeFiles/cmTC_1a83c.dir/src.cxx.o -MF CMakeFiles/cmTC_1a83c.dir/src.cxx.o.d -o CMakeFiles/cmTC_1a83c.dir/src.cxx.o -c /Users/anastasiapronina/C++Projects/TelegramBot/cmake-build-debug/CMakeFiles/CMakeTmp/src.cxx
+[1m/Users/anastasiapronina/C++Projects/TelegramBot/cmake-build-debug/CMakeFiles/CMakeTmp/src.cxx:2:22: [0m[0;1;31merror: [0m[1muse of undeclared identifier 'MYSQL_OPT_USE_EMBEDDED_CONNECTION'[0m
+int main() { int i = MYSQL_OPT_USE_EMBEDDED_CONNECTION; }
+[0;1;32m                     ^
+[0m1 error generated.
+make[1]: *** [CMakeFiles/cmTC_1a83c.dir/src.cxx.o] Error 1
+make: *** [cmTC_1a83c/fast] Error 2
+
+
+Source file was:
+#include <mysql.h>
+int main() { int i = MYSQL_OPT_USE_EMBEDDED_CONNECTION; }

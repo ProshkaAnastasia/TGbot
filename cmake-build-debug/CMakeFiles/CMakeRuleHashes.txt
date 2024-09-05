@@ -1,0 +1,2 @@
+# Hashes of file build rules.
+e6b58dc6c7c90833a9e0d0d4ce9b8f79 Soci/CMakeFiles/check

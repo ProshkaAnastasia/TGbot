@@ -1,0 +1,649 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.24"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"build" : "tgbot-cpp",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-tgbot-cpp-Debug-ed975118c9d2047ba8a9.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10.2"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "tgbot-cpp",
+					"targetIndexes" : 
+					[
+						1
+					]
+				},
+				{
+					"build" : "Soci",
+					"childIndexes" : 
+					[
+						3,
+						11
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-Soci-Debug-0c5e1c743f9cc01b7c2c.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "2.8"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 2,
+					"source" : "Soci",
+					"targetIndexes" : 
+					[
+						2
+					]
+				},
+				{
+					"build" : "Soci/src",
+					"childIndexes" : 
+					[
+						4,
+						5
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-Soci.src-Debug-a3fd916c9cc800081fad.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "2.8"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 2,
+					"source" : "Soci/src"
+				},
+				{
+					"build" : "Soci/src/core",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-Soci.src.core-Debug-40c44c25ea7e85d49f1e.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "2.8"
+					},
+					"parentIndex" : 3,
+					"projectIndex" : 2,
+					"source" : "Soci/src/core",
+					"targetIndexes" : 
+					[
+						3,
+						4
+					]
+				},
+				{
+					"build" : "Soci/src/backends",
+					"childIndexes" : 
+					[
+						6,
+						7,
+						8,
+						9,
+						10
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-Soci.src.backends-Debug-8f1dedac9712b076330f.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "2.8"
+					},
+					"parentIndex" : 3,
+					"projectIndex" : 2,
+					"source" : "Soci/src/backends"
+				},
+				{
+					"build" : "Soci/src/backends/empty",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-Soci.src.backends.empty-Debug-924715e859922e505c06.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "2.8"
+					},
+					"parentIndex" : 5,
+					"projectIndex" : 2,
+					"source" : "Soci/src/backends/empty",
+					"targetIndexes" : 
+					[
+						5,
+						6
+					]
+				},
+				{
+					"build" : "Soci/src/backends/mysql",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-Soci.src.backends.mysql-Debug-19a6b112a71480b4ae45.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "2.8"
+					},
+					"parentIndex" : 5,
+					"projectIndex" : 2,
+					"source" : "Soci/src/backends/mysql",
+					"targetIndexes" : 
+					[
+						9,
+						10
+					]
+				},
+				{
+					"build" : "Soci/src/backends/odbc",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-Soci.src.backends.odbc-Debug-dcf16d617e1b6411538d.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "2.8"
+					},
+					"parentIndex" : 5,
+					"projectIndex" : 2,
+					"source" : "Soci/src/backends/odbc",
+					"targetIndexes" : 
+					[
+						13,
+						14
+					]
+				},
+				{
+					"build" : "Soci/src/backends/postgresql",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-Soci.src.backends.postgresql-Debug-d4eb443c4932984396a2.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "2.8"
+					},
+					"parentIndex" : 5,
+					"projectIndex" : 2,
+					"source" : "Soci/src/backends/postgresql",
+					"targetIndexes" : 
+					[
+						21,
+						22
+					]
+				},
+				{
+					"build" : "Soci/src/backends/sqlite3",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-Soci.src.backends.sqlite3-Debug-d4c789b437d4249bc494.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "2.8"
+					},
+					"parentIndex" : 5,
+					"projectIndex" : 2,
+					"source" : "Soci/src/backends/sqlite3",
+					"targetIndexes" : 
+					[
+						25,
+						26
+					]
+				},
+				{
+					"build" : "Soci/tests",
+					"childIndexes" : 
+					[
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18,
+						19
+					],
+					"jsonFile" : "directory-Soci.tests-Debug-c332b64eac0663fe21c3.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "2.8"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 2,
+					"source" : "Soci/tests"
+				},
+				{
+					"build" : "Soci/tests/empty",
+					"jsonFile" : "directory-Soci.tests.empty-Debug-5f54ececf29fc85ed52d.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "2.8"
+					},
+					"parentIndex" : 11,
+					"projectIndex" : 2,
+					"source" : "Soci/tests/empty",
+					"targetIndexes" : 
+					[
+						7,
+						8
+					]
+				},
+				{
+					"build" : "Soci/tests/db2",
+					"jsonFile" : "directory-Soci.tests.db2-Debug-1d489bf291814871420b.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "2.8"
+					},
+					"parentIndex" : 11,
+					"projectIndex" : 2,
+					"source" : "Soci/tests/db2"
+				},
+				{
+					"build" : "Soci/tests/firebird",
+					"jsonFile" : "directory-Soci.tests.firebird-Debug-a326b479c3ec817e59a4.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "2.8"
+					},
+					"parentIndex" : 11,
+					"projectIndex" : 2,
+					"source" : "Soci/tests/firebird"
+				},
+				{
+					"build" : "Soci/tests/mysql",
+					"jsonFile" : "directory-Soci.tests.mysql-Debug-1389c79cbcc8acb67de9.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "2.8"
+					},
+					"parentIndex" : 11,
+					"projectIndex" : 2,
+					"source" : "Soci/tests/mysql",
+					"targetIndexes" : 
+					[
+						11,
+						12
+					]
+				},
+				{
+					"build" : "Soci/tests/odbc",
+					"jsonFile" : "directory-Soci.tests.odbc-Debug-a485e8e0b6440fd58569.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "2.8"
+					},
+					"parentIndex" : 11,
+					"projectIndex" : 2,
+					"source" : "Soci/tests/odbc",
+					"targetIndexes" : 
+					[
+						15,
+						16,
+						17,
+						18,
+						19,
+						20
+					]
+				},
+				{
+					"build" : "Soci/tests/oracle",
+					"jsonFile" : "directory-Soci.tests.oracle-Debug-bf7443f908dc93e8145e.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "2.8"
+					},
+					"parentIndex" : 11,
+					"projectIndex" : 2,
+					"source" : "Soci/tests/oracle"
+				},
+				{
+					"build" : "Soci/tests/postgresql",
+					"jsonFile" : "directory-Soci.tests.postgresql-Debug-bf9011e2f13af3a44486.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "2.8"
+					},
+					"parentIndex" : 11,
+					"projectIndex" : 2,
+					"source" : "Soci/tests/postgresql",
+					"targetIndexes" : 
+					[
+						23,
+						24
+					]
+				},
+				{
+					"build" : "Soci/tests/sqlite3",
+					"jsonFile" : "directory-Soci.tests.sqlite3-Debug-9b88511ed8169d5a34b8.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "2.8"
+					},
+					"parentIndex" : 11,
+					"projectIndex" : 2,
+					"source" : "Soci/tests/sqlite3",
+					"targetIndexes" : 
+					[
+						27,
+						28
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1,
+						2
+					],
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "TelegramBot",
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						1
+					],
+					"name" : "TgBot",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						1
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18,
+						19
+					],
+					"name" : "SOCI",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18,
+						19,
+						20,
+						21,
+						22,
+						23,
+						24,
+						25,
+						26,
+						27,
+						28
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "TelegramBot::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-TelegramBot-Debug-02fe0e2d71169984a8fb.json",
+					"name" : "TelegramBot",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "TgBot::@9d835d212a04f89786d5",
+					"jsonFile" : "target-TgBot-Debug-2721caa01e3f5e6a1ba0.json",
+					"name" : "TgBot",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "check::@52f81d4694c492f83beb",
+					"jsonFile" : "target-check-Debug-65c50147f2b7d2317409.json",
+					"name" : "check",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "soci_core::@67145c94faf853ddbf77",
+					"jsonFile" : "target-soci_core-Debug-49e533d26128423ca0c5.json",
+					"name" : "soci_core",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "soci_core_static::@67145c94faf853ddbf77",
+					"jsonFile" : "target-soci_core_static-Debug-4c4b4fe6eab8d5feb133.json",
+					"name" : "soci_core_static",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 6,
+					"id" : "soci_empty::@8ea3c135b6324d6835a7",
+					"jsonFile" : "target-soci_empty-Debug-c0ebe1c129ff723794dd.json",
+					"name" : "soci_empty",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 6,
+					"id" : "soci_empty_static::@8ea3c135b6324d6835a7",
+					"jsonFile" : "target-soci_empty_static-Debug-c30de18c8746f8eadee9.json",
+					"name" : "soci_empty_static",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 12,
+					"id" : "soci_empty_test::@c50f661dfc960914da61",
+					"jsonFile" : "target-soci_empty_test-Debug-b66339afaf250ac7afbc.json",
+					"name" : "soci_empty_test",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 12,
+					"id" : "soci_empty_test_static::@c50f661dfc960914da61",
+					"jsonFile" : "target-soci_empty_test_static-Debug-41d1b40d0e31d4618d83.json",
+					"name" : "soci_empty_test_static",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 7,
+					"id" : "soci_mysql::@a20d7f20f30e2e568402",
+					"jsonFile" : "target-soci_mysql-Debug-bdfb18f84c32eb653d8a.json",
+					"name" : "soci_mysql",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 7,
+					"id" : "soci_mysql_static::@a20d7f20f30e2e568402",
+					"jsonFile" : "target-soci_mysql_static-Debug-5066bed580c90dc53833.json",
+					"name" : "soci_mysql_static",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 15,
+					"id" : "soci_mysql_test::@5ff8ed5050726ef37832",
+					"jsonFile" : "target-soci_mysql_test-Debug-3dad7796c23daa1e4550.json",
+					"name" : "soci_mysql_test",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 15,
+					"id" : "soci_mysql_test_static::@5ff8ed5050726ef37832",
+					"jsonFile" : "target-soci_mysql_test_static-Debug-410c48a86214882431a3.json",
+					"name" : "soci_mysql_test_static",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 8,
+					"id" : "soci_odbc::@6b4501392bee99e162f3",
+					"jsonFile" : "target-soci_odbc-Debug-da6ed4d03d6743e52fc6.json",
+					"name" : "soci_odbc",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 8,
+					"id" : "soci_odbc_static::@6b4501392bee99e162f3",
+					"jsonFile" : "target-soci_odbc_static-Debug-facdc486489c9f92c761.json",
+					"name" : "soci_odbc_static",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 16,
+					"id" : "soci_odbc_test_mssql::@e0f619d9c0a43afd1863",
+					"jsonFile" : "target-soci_odbc_test_mssql-Debug-b9084cfc4264ec2eb664.json",
+					"name" : "soci_odbc_test_mssql",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 16,
+					"id" : "soci_odbc_test_mssql_static::@e0f619d9c0a43afd1863",
+					"jsonFile" : "target-soci_odbc_test_mssql_static-Debug-d08ba901c437a8bbb158.json",
+					"name" : "soci_odbc_test_mssql_static",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 16,
+					"id" : "soci_odbc_test_mysql::@e0f619d9c0a43afd1863",
+					"jsonFile" : "target-soci_odbc_test_mysql-Debug-158e861c28500bd9ca42.json",
+					"name" : "soci_odbc_test_mysql",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 16,
+					"id" : "soci_odbc_test_mysql_static::@e0f619d9c0a43afd1863",
+					"jsonFile" : "target-soci_odbc_test_mysql_static-Debug-db74c4c03626ce9ee0ec.json",
+					"name" : "soci_odbc_test_mysql_static",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 16,
+					"id" : "soci_odbc_test_postgresql::@e0f619d9c0a43afd1863",
+					"jsonFile" : "target-soci_odbc_test_postgresql-Debug-cc3c4f12f33a5baddefe.json",
+					"name" : "soci_odbc_test_postgresql",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 16,
+					"id" : "soci_odbc_test_postgresql_static::@e0f619d9c0a43afd1863",
+					"jsonFile" : "target-soci_odbc_test_postgresql_static-Debug-e8f231c539fece153025.json",
+					"name" : "soci_odbc_test_postgresql_static",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 9,
+					"id" : "soci_postgresql::@c171f4797fe13498ec7b",
+					"jsonFile" : "target-soci_postgresql-Debug-1e90eb1d9159a40eae1e.json",
+					"name" : "soci_postgresql",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 9,
+					"id" : "soci_postgresql_static::@c171f4797fe13498ec7b",
+					"jsonFile" : "target-soci_postgresql_static-Debug-b42bd1ba74763a1215d4.json",
+					"name" : "soci_postgresql_static",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 18,
+					"id" : "soci_postgresql_test::@e5e7c2322852367a1260",
+					"jsonFile" : "target-soci_postgresql_test-Debug-740f591829e6704af947.json",
+					"name" : "soci_postgresql_test",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 18,
+					"id" : "soci_postgresql_test_static::@e5e7c2322852367a1260",
+					"jsonFile" : "target-soci_postgresql_test_static-Debug-ed6d3e39db59bd426351.json",
+					"name" : "soci_postgresql_test_static",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 10,
+					"id" : "soci_sqlite3::@928246ccf967e6fc895c",
+					"jsonFile" : "target-soci_sqlite3-Debug-1df770bf4f3968faa7d3.json",
+					"name" : "soci_sqlite3",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 10,
+					"id" : "soci_sqlite3_static::@928246ccf967e6fc895c",
+					"jsonFile" : "target-soci_sqlite3_static-Debug-a94dbf989d2c7b949cc0.json",
+					"name" : "soci_sqlite3_static",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 19,
+					"id" : "soci_sqlite3_test::@ef1c9eaa307e05fbf09f",
+					"jsonFile" : "target-soci_sqlite3_test-Debug-1bf3a05d3436923c2c92.json",
+					"name" : "soci_sqlite3_test",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 19,
+					"id" : "soci_sqlite3_test_static::@ef1c9eaa307e05fbf09f",
+					"jsonFile" : "target-soci_sqlite3_test_static-Debug-afb28c8b2736b7bf1959.json",
+					"name" : "soci_sqlite3_test_static",
+					"projectIndex" : 2
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/Users/anastasiapronina/C++Projects/TelegramBot/cmake-build-debug",
+		"source" : "/Users/anastasiapronina/C++Projects/TelegramBot"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 4
+	}
+}

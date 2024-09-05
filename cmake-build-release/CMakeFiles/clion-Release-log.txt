@@ -1,0 +1,103 @@
+/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_MAKE_PROGRAM=/Applications/CLion.app/Contents/bin/ninja/mac/ninja -G Ninja -S /Users/anastasiapronina/C++Projects/TelegramBot -B /Users/anastasiapronina/C++Projects/TelegramBot/cmake-build-release
+-- 20
+-- Found Boost: /opt/homebrew/lib/cmake/Boost-1.82.0/BoostConfig.cmake (found version "1.82.0") found components: system 
+-- Found Boost: /opt/homebrew/lib/cmake/Boost-1.82.0/BoostConfig.cmake (found suitable version "1.82.0", minimum required is "1.65.1") found components: system 
+-- gcc / clang visibility enabled
+-- Configuring SOCI: 
+-- SOCI_VERSION                             = 4.1.0 
+-- SOCI_ABI_VERSION                         = 4.1 
+-- SOCI_SHARED                              = ON 
+-- SOCI_STATIC                              = ON 
+-- SOCI_TESTS                               = ON 
+-- SOCI_ASAN                                = OFF 
+-- LIB_SUFFIX                               = 64 
+-- Looking for SOCI dependencies: 
+-- Threads: 
+-- CMAKE_THREAD_LIBS_INIT                   =  
+-- Boost: 
+-- BOOST_RELEASE_VERSION                    =  
+-- BOOST_INCLUDE_DIR                        =  
+-- BOOST_LIBRARIES                          =  
+-- MySQL: 
+-- Found MySQL: /usr/local/mysql/include, /usr/local/mysql/lib/libmysqlclient.dylib
+-- MySQL Embedded not found.
+-- MYSQL_INCLUDE_DIR                        = /usr/local/mysql/include 
+-- MYSQL_LIBRARIES                          = /usr/local/mysql/lib/libmysqlclient.dylib 
+-- ODBC: 
+-- ODBC_INCLUDE_DIR                         = /opt/homebrew/Cellar/unixodbc/2.3.11/include 
+-- ODBC_LIBRARIES                           = /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/lib/libiodbc.tbd 
+-- Oracle: 
+-- ORACLE_HOME=
+-- None of the supported Oracle versions (21;20;19;18;12;11;10) could be found, consider updating ORACLE_VERSIONS if the version you use is not among them.
+-- WARNING: Oracle libraries not found, some features will be disabled. 
+-- PostgreSQL: 
+-- POSTGRESQL_INCLUDE_DIRS                  = /Library/PostgreSQL/15/include 
+-- POSTGRESQL_LIBRARIES                     = /Library/PostgreSQL/15/lib/libpq.a 
+-- POSTGRESQL_VERSION                       = 15.1 
+-- SQLite3: 
+-- SQLITE3_INCLUDE_DIR                      = /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include 
+-- SQLITE3_LIBRARIES                        = /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/lib/libsqlite3.tbd 
+-- Firebird: 
+-- SOCI_FIREBIRD_EMBEDDED                   = OFF 
+-- WARNING: Firebird libraries not found, some features will be disabled. 
+-- DB2: 
+-- WARNING: DB2 libraries not found, some features will be disabled. 
+-- Configuring SOCI core library: 
+-- SOCI_CORE_TARGET                         = soci_core 
+-- SOCI_CORE_TARGET_OUTPUT_NAME             = soci_core 
+-- SOCI_CORE_DEPS_LIBS                      = /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/lib/libdl.tbd Boost::date_time 
+-- SOCI_CORE_INCLUDE_DIRS                   = /Users/anastasiapronina/OpenSSL/include /opt/homebrew/Cellar/boost/1.80.0/include /Library/PostgreSQL/15/include /opt/homebrew/include /Users/anastasiapronina/C++Projects/TelegramBot/cmake-build-release/Soci /Users/anastasiapronina/C++Projects/TelegramBot/Soci/include /Users/anastasiapronina/C++Projects/TelegramBot/cmake-build-release/Soci/include /Users/anastasiapronina/C++Projects/TelegramBot/Soci/include/private /Users/anastasiapronina/C++Projects/TelegramBot/cmake-build-release/Soci/src/core 
+-- WITH_BOOST                               = ON 
+-- COMPILE_DEFINITIONS                      = SOCI_ABI_VERSION="4.1" HAVE_DL=1 BOOST_ALL_NO_LIB SOCI_LIB_PREFIX="libsoci_" SOCI_LIB_SUFFIX=".dylib" SOCI_DEBUG_POSTFIX="" 
+-- 
+-- Configuring SOCI backend libraries: 
+-- Found MySQL: /usr/local/mysql/include, /usr/local/mysql/lib/libmysqlclient.dylib
+-- MySQL Embedded not found.
+-- ORACLE_HOME=
+-- None of the supported Oracle versions (21;20;19;18;12;11;10) could be found, consider updating ORACLE_VERSIONS if the version you use is not among them.
+-- Empty - SOCI backend skeleton for new backends development 
+-- SOCI_EMPTY                               = ON 
+-- SOCI_EMPTY_TARGET                        = soci_empty 
+-- SOCI_EMPTY_OUTPUT_NAME                   = soci_empty 
+-- SOCI_EMPTY_COMPILE_DEFINITIONS           = SOCI_ABI_VERSION="4.1" HAVE_DL=1 BOOST_ALL_NO_LIB 
+-- SOCI_EMPTY_INCLUDE_DIRECTORIES           = /Users/anastasiapronina/OpenSSL/include /opt/homebrew/Cellar/boost/1.80.0/include /Library/PostgreSQL/15/include /opt/homebrew/include /Users/anastasiapronina/C++Projects/TelegramBot/cmake-build-release/Soci /Users/anastasiapronina/C++Projects/TelegramBot/Soci/include /Users/anastasiapronina/C++Projects/TelegramBot/cmake-build-release/Soci/include /Users/anastasiapronina/C++Projects/TelegramBot/Soci/include/private /Users/anastasiapronina/C++Projects/TelegramBot/Soci/include/private 
+-- MySQL - SOCI backend for MySQL 
+-- SOCI_MYSQL                               = ON 
+-- SOCI_MYSQL_TARGET                        = soci_mysql 
+-- SOCI_MYSQL_OUTPUT_NAME                   = soci_mysql 
+-- SOCI_MYSQL_COMPILE_DEFINITIONS           = SOCI_ABI_VERSION="4.1" HAVE_DL=1 BOOST_ALL_NO_LIB 
+-- SOCI_MYSQL_INCLUDE_DIRECTORIES           = /Users/anastasiapronina/OpenSSL/include /opt/homebrew/Cellar/boost/1.80.0/include /Library/PostgreSQL/15/include /opt/homebrew/include /Users/anastasiapronina/C++Projects/TelegramBot/cmake-build-release/Soci /Users/anastasiapronina/C++Projects/TelegramBot/Soci/include /Users/anastasiapronina/C++Projects/TelegramBot/cmake-build-release/Soci/include /Users/anastasiapronina/C++Projects/TelegramBot/Soci/include/private /Users/anastasiapronina/C++Projects/TelegramBot/Soci/include/private /usr/local/mysql/include 
+-- ODBC - SOCI backend for ODBC 
+-- SOCI_ODBC                                = ON 
+-- SOCI_ODBC_TARGET                         = soci_odbc 
+-- SOCI_ODBC_OUTPUT_NAME                    = soci_odbc 
+-- SOCI_ODBC_COMPILE_DEFINITIONS            = SOCI_ABI_VERSION="4.1" HAVE_DL=1 BOOST_ALL_NO_LIB 
+-- SOCI_ODBC_INCLUDE_DIRECTORIES            = /Users/anastasiapronina/OpenSSL/include /opt/homebrew/Cellar/boost/1.80.0/include /Library/PostgreSQL/15/include /opt/homebrew/include /Users/anastasiapronina/C++Projects/TelegramBot/cmake-build-release/Soci /Users/anastasiapronina/C++Projects/TelegramBot/Soci/include /Users/anastasiapronina/C++Projects/TelegramBot/cmake-build-release/Soci/include /Users/anastasiapronina/C++Projects/TelegramBot/Soci/include/private /Users/anastasiapronina/C++Projects/TelegramBot/Soci/include/private /opt/homebrew/Cellar/unixodbc/2.3.11/include /opt/homebrew/Cellar/unixodbc/2.3.11/include 
+-- PostgreSQL - SOCI backend for PostgreSQL 
+-- SOCI_POSTGRESQL                          = ON 
+-- SOCI_POSTGRESQL_TARGET                   = soci_postgresql 
+-- SOCI_POSTGRESQL_OUTPUT_NAME              = soci_postgresql 
+-- SOCI_POSTGRESQL_COMPILE_DEFINITIONS      = SOCI_ABI_VERSION="4.1" HAVE_DL=1 BOOST_ALL_NO_LIB 
+-- SOCI_POSTGRESQL_INCLUDE_DIRECTORIES      = /Users/anastasiapronina/OpenSSL/include /opt/homebrew/Cellar/boost/1.80.0/include /Library/PostgreSQL/15/include /opt/homebrew/include /Users/anastasiapronina/C++Projects/TelegramBot/cmake-build-release/Soci /Users/anastasiapronina/C++Projects/TelegramBot/Soci/include /Users/anastasiapronina/C++Projects/TelegramBot/cmake-build-release/Soci/include /Users/anastasiapronina/C++Projects/TelegramBot/Soci/include/private /Users/anastasiapronina/C++Projects/TelegramBot/Soci/include/private /Library/PostgreSQL/15/include /Library/PostgreSQL/15/include 
+-- SOCI_POSTGRESQL_NOSINLGEROWMODE          =  
+-- SQLite3 - SOCI backend for SQLite 3 
+-- SOCI_SQLITE3                             = ON 
+-- SOCI_SQLITE3_TARGET                      = soci_sqlite3 
+-- SOCI_SQLITE3_OUTPUT_NAME                 = soci_sqlite3 
+-- SOCI_SQLITE3_COMPILE_DEFINITIONS         = SOCI_ABI_VERSION="4.1" HAVE_DL=1 BOOST_ALL_NO_LIB 
+-- SOCI_SQLITE3_INCLUDE_DIRECTORIES         = /Users/anastasiapronina/OpenSSL/include /opt/homebrew/Cellar/boost/1.80.0/include /Library/PostgreSQL/15/include /opt/homebrew/include /Users/anastasiapronina/C++Projects/TelegramBot/cmake-build-release/Soci /Users/anastasiapronina/C++Projects/TelegramBot/Soci/include /Users/anastasiapronina/C++Projects/TelegramBot/cmake-build-release/Soci/include /Users/anastasiapronina/C++Projects/TelegramBot/Soci/include/private /Users/anastasiapronina/C++Projects/TelegramBot/Soci/include/private /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include 
+-- 
+-- Configuring SOCI tests: 
+-- SOCI_EMPTY_TEST_CONNSTR                  = dummy
+-- SOCI_MYSQL_TEST_CONNSTR                  = db=soci_test
+-- MS Access test disabled on non-Windows platform
+-- SOCI_ODBC_TEST_MSSQL_CONNSTR             = FILEDSN=/Users/anastasiapronina/C++Projects/TelegramBot/cmake-build-release/Soci/tests/odbc/test-mssql.dsn
+-- SOCI_ODBC_TEST_MYSQL_CONNSTR             = FILEDSN=/Users/anastasiapronina/C++Projects/TelegramBot/Soci/tests/odbc/test-mysql.dsn
+-- SOCI_ODBC_TEST_POSTGRESQL_CONNSTR        = FILEDSN=/Users/anastasiapronina/C++Projects/TelegramBot/Soci/tests/odbc/test-postgresql.dsn
+-- ODBC DB2 test disabled.
+-- SOCI_POSTGRESQL_TEST_CONNSTR             = dbname=soci_test
+-- SOCI_SQLITE3_TEST_CONNSTR                = :memory:
+-- 
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /Users/anastasiapronina/C++Projects/TelegramBot/cmake-build-release
